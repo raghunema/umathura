@@ -1,0 +1,10 @@
+GOAL: Making a UMoria clone in c
+
+Make it simple and easy
+- Only one class (Warrior) with one race (Human)
+
+Resource: reading the umoria github to see what all i got to do
+
+Milestone One: 
+- Rendering a static map
+- Getting character to move a character sprite on the screen
