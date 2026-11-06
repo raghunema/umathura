@@ -1,4 +1,5 @@
 #include "dungeon.h"
+#include "helpers.h"
 
 // static const D_Terrain Terrain_Table[T_COUNT] = {
 //     [T_FLOOR] = { ' ', false},
@@ -50,3 +51,10 @@ D_Floor floor_from_text(const char *char_map, uint32_t h, uint32_t w) {
     return f;
 }
 
+D_Tile get_tile(D_Floor floor, Coordinate coors) {
+    /*
+        Coor is in y and x
+        so Tile is in position (y * width) + x
+    */
+    return floor.tiles[(coors.y * floor.floor_width) + coors.x];
+}

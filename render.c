@@ -71,17 +71,14 @@ int initialize_character_placement(Player *p) {
     return 0;
 }
 
-// int move_char_position(Player *p, D_Floor *floor) {
-//     /*
-//         Get tile current player tile
-//         Rewrite the current tile to be the tile sprite
-//         Move player and add player char on sprite
-//     */
+int render_move_character(Player *p, Coordinate prev_coors, D_Tile prev_tile) {
+	//overwrite previous position with tile sprite
+	mvwaddch(play_win, prev_coors.y, prev_coors.x, prev_tile.sprite);
+	//overwrite new position with character sprite
+	mvwaddch(play_win, p->coors.y, p->coors.x, p->sprite);
+	return 0;
+};
 
-//     // int player_flat_position = 
-
-//     return 0;
-// }
 
 int end_ncurses(void) {
     delwin(play_win);
