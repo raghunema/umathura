@@ -1,6 +1,6 @@
 #pragma once //compile once?
 #include <stdbool.h>
-#include <stdint.h> 
+#include <stdlib.h>
 
 static const uint8_t MAX_FLOORS = 255;
 
@@ -48,4 +48,5 @@ typedef struct {
     FUNCTIONS
 */
 
-D_Tile make_tile_from_terrain_type(Terrain_Type terrain_type);
+//D_Tile make_tile_from_terrain_type(Terrain_Type terrain_type);
+D_Floor floor_from_text(const char *char_map, uint32_t h, uint32_t w);

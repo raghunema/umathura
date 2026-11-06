@@ -1,19 +1,22 @@
-CC = clang
-CFLAGS = -Wall -Wextra -g
-LDLIBS = -lncurses
+CC      = clang
+CFLAGS  = -Wall -Wextra -g -MMD -MP
+LDLIBS  = -lncurses
 
-TARGET = game
+TARGET  = game
 
-OBJS = dungeon.o run_game.o
+SRCS    = $(wildcard *.c)
+OBJS    = $(SRCS:.c=.o)
+DEPS    = $(OBJS:.o=.d)
 
 $(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LDLIBS)
+	$(CC) $(CFLAGS) -o $@ $(OBJS) $(LDLIBS)
 
-dungeon.o: dungeon.c dungeon.h
-	$(CC) $(CFLAGS) -c dungeon.c
-
-game_run.o: game_run.c dungeon.h
-	$(CC) $(CFLAGS) -c run_game.c
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(OBJS) $(DEPS) $(TARGET)
+
+-include $(DEPS)
+
+.PHONY: clean
