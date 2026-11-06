@@ -63,10 +63,10 @@ void render_map(const Dungeon *d, WINDOW *win) {
    
     /*
         D_Floor.tiles is a flat map
-        [Width, Width, Width]
+        [Width, Width, Width] etc
     */
     for (size_t i = 0; i < (size_t) w * h; i++) {
-        size_t row = i % w;
+        size_t row = (size_t) i / w; //Floor operation with division to get row
         size_t col = i - (row * w);
 
         D_Tile curr_tile = curr_floor.tiles[i];
