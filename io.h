@@ -1,3 +1,3 @@
 #pragma once
 
-char get_play_input();
+int get_play_input();

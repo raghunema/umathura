@@ -2,7 +2,6 @@
 
 #include "helpers.h"
 #include "stdbool.h"
-#include "ncurses.h"
 
 typedef struct {
     Coordinate coors;

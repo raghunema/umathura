@@ -5,11 +5,30 @@ WINDOW *play_win;
 WINDOW *status_win;
 WINDOW *menu_win;
 
+int debug_row = 1;
+
+void reset_debug_row(void){
+	debug_row = 1;
+}
+
+void print_debug(const char *fmt, ...) {
+    char buf[128];
+
+    va_list args;
+    va_start(args, fmt);
+    vsnprintf(buf, sizeof buf, fmt, args);
+    va_end(args);
+
+    mvwprintw(status_win, debug_row, 2, "%-40s", buf);
+    wrefresh(status_win);
+	debug_row++;
+}
+
 int start_ncurses (void) {
     initscr();			/* Start curses mode 		*/
 	cbreak();			// Not needed tbh
-	keypad(stdscr, TRUE);		
-	
+	keypad(stdscr, TRUE);	
+
 	cbreak();
 	noecho();
 	curs_set(0); //hide cursor
@@ -35,7 +54,6 @@ Split terminal into three sections i.e. windows
 3. Menu + instructuins 
 	H: Bottm 25% W: 100%
 */
-
 int create_screens() {
     int startx, starty, width, height;
     refresh();
@@ -76,9 +94,9 @@ int render_move_character(Player *p, Coordinate prev_coors, D_Tile prev_tile) {
 	mvwaddch(play_win, prev_coors.y, prev_coors.x, prev_tile.sprite);
 	//overwrite new position with character sprite
 	mvwaddch(play_win, p->coors.y, p->coors.x, p->sprite);
+	wrefresh(play_win);
 	return 0;
 };
-
 
 int end_ncurses(void) {
     delwin(play_win);
