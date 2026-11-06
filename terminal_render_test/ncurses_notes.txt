@@ -1,2 +1,8 @@
 Using ncurses for display on the terminal
 
+------
+
+
+make commands: 
+
+clang windows_test.c -Wall -Wextra -o ./win_test -lncurses

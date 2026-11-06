@@ -52,11 +52,9 @@ int main(void)
 	width = COLS; 
 	menu_win = create_newwin(height, width, starty, startx);
 	
-	mvwprintw(menu_win, 1, 1, "Arrows keys for movement");
-	mvwprintw(menu_win, 2, 1, "q to Quit");
+	mvwprintw(menu_win, 1, 1, " Arrows keys for movement");
+	mvwprintw(menu_win, 2, 1, " q to Quit");
 	wrefresh(menu_win);
-
-
 
 	int move_char;
     char character = '@';
