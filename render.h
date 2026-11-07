@@ -30,6 +30,7 @@ int initialize_character_placement(Player *p);
 
 void render_map(const Dungeon *d);
 Camera initalize_win_camera(Coordinate start_coors);
+void update_camera_position(Player *p, Camera *c);
 void set_camera_view(Camera *c, D_Floor *f, Player *p);
 void render_camera_view(Camera *c);
 

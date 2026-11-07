@@ -80,8 +80,7 @@ int main(void)
             print_debug("global_new_coors (x, y): (%zu, %zu)", p.coors.x, p.coors.y);
 
             //update camera coordinates to follow player
-            update_camera_position(&p);
- 
+            update_camera_position(&p, &c);
         }
 
         set_camera_view(&c, &d.floors[d.curr_floor], &p);

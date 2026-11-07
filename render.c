@@ -126,13 +126,35 @@ Camera initalize_win_camera(Coordinate start_coors) {
 	Camera c = {
 		.map_position = start_coors,
 		.win_midpoint = win_midpoint,
-		.max_distance_from_player = 10,
+		.max_distance_from_player = 3,
 		.win_h = play_win_h,
 		.win_w = play_win_w,
 		.camera_view = camera_view
 	};
 
 	return c;
+}
+
+void update_camera_position(Player *p, Camera *c) {
+	size_t distance_y = (p->coors.y > c->map_position.y) ? p->coors.y - c->map_position.y : c->map_position.y - p->coors.y;
+	size_t distance_x = (p->coors.x > c->map_position.x) ? p->coors.x - c->map_position.x : c->map_position.x - p->coors.x;
+
+	if (distance_y > c->max_distance_from_player) {
+		if (p->coors.y > c->map_position.y) {
+			c->map_position.y++;
+		} else {
+			c->map_position.y--;
+		}
+	}
+	
+	if (distance_x > c->max_distance_from_player) {
+		if (p->coors.x > c->map_position.x) {
+			c->map_position.x++;
+		} else {
+			c->map_position.x--;
+		}
+	}
+
 }
 
 //Write a view into camera to then render
@@ -198,6 +220,7 @@ void render_camera_view(Camera *c) {
 	}
 	wrefresh(play_win);
 }
+
 
 void render_map(const Dungeon *d) {
     D_Floor curr_floor = d->floors[d->curr_floor];
