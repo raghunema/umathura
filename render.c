@@ -1,5 +1,6 @@
 #include "render.h"
 #include <ncurses.h>
+#include <string.h>
 
 WINDOW *play_win;
 WINDOW *status_win;
@@ -96,14 +97,14 @@ int initialize_character_placement(Player *p) {
     return 0;
 }
 
-int render_move_character(Player *p, Coordinate prev_coors, D_Tile prev_tile) {
-	//overwrite previous position with tile sprite
-	mvwaddch(play_win, prev_coors.y, prev_coors.x, prev_tile.sprite);
-	//overwrite new position with character sprite
-	mvwaddch(play_win, p->coors.y, p->coors.x, p->sprite);
-	wrefresh(play_win);
-	return 0;
-};
+// int render_move_character(Player *p, Coordinate prev_coors, D_Tile prev_tile) {
+// 	//overwrite previous position with tile sprite
+// 	mvwaddch(play_win, prev_coors.y, prev_coors.x, prev_tile.sprite);
+// 	//overwrite new position with character sprite
+// 	mvwaddch(play_win, p->coors.y, p->coors.x, p->sprite);
+// 	wrefresh(play_win);
+// 	return 0;
+// };
 
 int end_ncurses(void) {
     delwin(play_win);
@@ -136,6 +137,8 @@ Camera initalize_win_camera(Coordinate start_coors) {
 
 //Write a view into camera to then render
 void set_camera_view(Camera *c, D_Floor *f, Player *p) {
+	//resetting camera_view
+	memset(c->camera_view, ' ', (size_t)c->win_h * c->win_w);
 
 	/* 
 		Camera is at position (3,3)
@@ -144,7 +147,6 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 
 		Need to shit (3,3) and render it at (27,100)
 	*/
-
 	size_t floor_h = f->floor_height;
     size_t floor_w = f->floor_width;
 	
@@ -176,6 +178,14 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 		c->camera_view[new_flat_position] = f->tiles[i].sprite;
 	}
 
+	//get player_position, shift, and add onto camera_view as well
+	Coordinate player_shifted_coor = {
+		.y = p->coors.y - shift_y,
+		.x = p->coors.x - shift_x
+	};
+	size_t player_flat_position = flat_poistion_from_coordinate(player_shifted_coor, c->win_w, c->win_h);
+	c->camera_view[player_flat_position] = p->sprite;
+
 }
 
 void render_camera_view(Camera *c) {
@@ -186,6 +196,7 @@ void render_camera_view(Camera *c) {
 		Coordinate camera_view_coor = coordinate_from_flat_map(i, w_cam, h_cam);
 		mvwaddch(play_win, camera_view_coor.y, camera_view_coor.x, c->camera_view[i]);
 	}
+	wrefresh(play_win);
 }
 
 void render_map(const Dungeon *d) {

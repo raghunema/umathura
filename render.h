@@ -26,11 +26,12 @@ int create_screens();
 int end_ncurses();
 
 int initialize_character_placement(Player *p);
-int render_move_character(Player *p, Coordinate prev_coor, D_Tile prev_tile);
+//qint render_move_character(Player *p, Coordinate prev_coor, D_Tile prev_tile);
 
 void render_map(const Dungeon *d);
 Camera initalize_win_camera(Coordinate start_coors);
 void set_camera_view(Camera *c, D_Floor *f, Player *p);
+void render_camera_view(Camera *c);
 
 void reset_debug_row(void);
 void print_debug(const char *fmt, ...) __attribute__((format(printf, 1, 2)));
