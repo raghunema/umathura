@@ -58,3 +58,4 @@ D_Tile get_tile(D_Floor floor, Coordinate coors) {
     */
     return floor.tiles[(coors.y * floor.floor_width) + coors.x];
 }
+

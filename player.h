@@ -11,4 +11,4 @@ typedef struct {
 Player intialize_player(Coordinate start_coors);
 
 int initialize_character_placement(Player *p);
-bool is_character_input(Player *p, int ch);
+void update_character_position(Player *p, Coordinate new_coors);

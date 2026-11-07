@@ -103,10 +103,16 @@ int main(void)
         print_debug("prev_cors (x, y): (%zu, %zu)", prev_coors.x,  prev_coors.y);
         print_debug("tile sprite: %c", prev_tile.sprite);
 
-        is_character_input(&p, ch);
-        print_debug("new character postion (x, y): (%zu, %zu)", p.coors.x, p.coors.y);
+        Coordinate new_coors = get_new_coors_from_input(prev_coors, ch);
+        D_Tile new_tile = get_tile(d.floors[d.curr_floor], new_coors);
 
-        render_move_character(&p, prev_coors, prev_tile);
+        if (!new_tile.is_blocker) {
+            update_character_position(&p, new_coors);
+            print_debug("new character postion (x, y): (%zu, %zu)", p.coors.x, p.coors.y);
+
+            render_move_character(&p, prev_coors, prev_tile);  
+        }
+        
 	};
 
     end_ncurses();
