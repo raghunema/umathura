@@ -21,12 +21,14 @@ typedef struct {
 
 } Camera;
 
+void debug_init(const char *path);
+void debug_close();
+
 int start_ncurses();
 int create_screens();
 int end_ncurses();
 
 int initialize_character_placement(Player *p);
-//qint render_move_character(Player *p, Coordinate prev_coor, D_Tile prev_tile);
 
 void render_map(const Dungeon *d);
 Camera initalize_win_camera(Coordinate start_coors);

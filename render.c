@@ -1,6 +1,7 @@
 #include "render.h"
 #include <ncurses.h>
 #include <string.h>
+#include <stdio.h>
 
 WINDOW *play_win;
 WINDOW *status_win;
@@ -10,21 +11,43 @@ int debug_row = 1;
 int play_win_h;
 int play_win_w;
 
+static FILE *debug_file = NULL;
+
 void reset_debug_row(void){
 	debug_row = 1;
 }
 
+void debug_init(const char *path) {
+	debug_file = fopen(path, "w");
+	if (debug_file) setvbuf(debug_file, NULL, _IOLBF, 0); 
+}
+
 void print_debug(const char *fmt, ...) {
-    char buf[128];
+    // char buf[128];
+
+    // va_list args;
+    // va_start(args, fmt);
+    // vsnprintf(buf, sizeof buf, fmt, args);
+    // va_end(args);
+
+	// fflush(debug_file);
+    // //mvwprintw(status_win, debug_row, 2, "%-40s", buf);
+    // //wrefresh(status_win);
+	// debug_row++;
+
+	if (!debug_file) return;
 
     va_list args;
     va_start(args, fmt);
-    vsnprintf(buf, sizeof buf, fmt, args);
+    vfprintf(debug_file, fmt, args);
     va_end(args);
 
-    mvwprintw(status_win, debug_row, 2, "%-40s", buf);
-    wrefresh(status_win);
-	debug_row++;
+    fflush(debug_file);
+}
+
+void debug_close(void) {
+    if (debug_file) fclose(debug_file);
+    debug_file = NULL;
 }
 
 int start_ncurses (void) {
@@ -96,15 +119,6 @@ int initialize_character_placement(Player *p) {
 
     return 0;
 }
-
-// int render_move_character(Player *p, Coordinate prev_coors, D_Tile prev_tile) {
-// 	//overwrite previous position with tile sprite
-// 	mvwaddch(play_win, prev_coors.y, prev_coors.x, prev_tile.sprite);
-// 	//overwrite new position with character sprite
-// 	mvwaddch(play_win, p->coors.y, p->coors.x, p->sprite);
-// 	wrefresh(play_win);
-// 	return 0;
-// };
 
 int end_ncurses(void) {
     delwin(play_win);
@@ -208,6 +222,11 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 	size_t player_flat_position = flat_poistion_from_coordinate(player_shifted_coor, c->win_w, c->win_h);
 	c->camera_view[player_flat_position] = p->sprite;
 
+	print_debug("Camera View:\n");
+	for (int y = 0; y < c->win_h; y++) {
+		print_debug("%.*s\n", (int)c->win_w, &c->camera_view[(size_t)y * c->win_w]);
+	}
+	print_debug("+%.*s+\n", (int)c->win_w, "----------------------------------------------------------------");
 }
 
 void render_camera_view(Camera *c) {
@@ -220,7 +239,6 @@ void render_camera_view(Camera *c) {
 	}
 	wrefresh(play_win);
 }
-
 
 void render_map(const Dungeon *d) {
     D_Floor curr_floor = d->floors[d->curr_floor];
