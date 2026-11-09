@@ -3,6 +3,8 @@
 *.d
 game
 
+debug.log
+
 # macOS debug symbols
 *.dSYM/
 .DS_Store
