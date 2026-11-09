@@ -172,63 +172,6 @@ void update_camera_position(Player *p, Camera *c) {
 }
 
 //Write a view into camera to then render
-void set_camera_view_temp(Camera *c, D_Floor *f, Player *p) {
-	//resetting camera_view
-	memset(c->camera_view, ' ', (size_t)c->win_h * c->win_w);
-
-	/* 
-		Camera is at position (3,3)
-		play_win d = (54, 201)
-		play_win midpoint = (27, 100)
-
-		Need to shit (3,3) and render it at (27,100)
-	*/
-	size_t floor_h = f->floor_height;
-    size_t floor_w = f->floor_width;
-	
-	size_t shift_y = c->map_position.y - c->win_midpoint.y;
-	size_t shift_x = c->map_position.x - c->win_midpoint.x;
-	
-	/* 
-		For tile at position (y, x) get new camera position of (y', x')
-		Store the sprite into camera view
-	*/
-	for (size_t i = 0; i < floor_h * floor_w; i++) {
-		/*
-			For Each tiles in flat map of the floor
-			Convert Tile into Floor-Coorindate
-			Shift Cooridnate for Map
-			Turn back into flat position
-			Add into camera view
-		*/	
-		
-		Coordinate global_coor = coordinate_from_flat_map(i, floor_w, floor_h);
-		
-		//Should handle negative shifts?? need to confirm!!
-		Coordinate shifted_coor = {
-			.y = global_coor.y - shift_y,
-			.x = global_coor.x - shift_x
-		};
-
-		size_t new_flat_position = flat_poistion_from_coordinate(shifted_coor, c->win_w, c->win_h);
-		c->camera_view[new_flat_position] = f->tiles[i].sprite;
-	}
-
-	//get player_position, shift, and add onto camera_view as well
-	Coordinate player_shifted_coor = {
-		.y = p->coors.y - shift_y,
-		.x = p->coors.x - shift_x
-	};
-	size_t player_flat_position = flat_poistion_from_coordinate(player_shifted_coor, c->win_w, c->win_h);
-	c->camera_view[player_flat_position] = p->sprite;
-
-	print_debug("Camera View:\n");
-	for (size_t y = 0; y < c->win_h; y++) {
-		print_debug("%.*s\n", (int)c->win_w, &c->camera_view[(size_t)y * c->win_w]);
-	}
-	print_debug("+%.*s+\n", (int)c->win_w, "----------------------------------------------------------------");
-}
-
 void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 
 	//resetting camera_view
@@ -269,6 +212,7 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 
 	print_debug("\nMin_X: %d, Max_x: %d, Min_Y: %d, Max_Y: %d\n", min_x, max_x, min_y, max_y);
 
+	//need to update this so it only goes through tiles the camera can see instead of the entire floor
 	for (size_t i = 0; i < (f->floor_height * f->floor_width); i++) {
 		/*
 			For Each tiles in flat map of the floor

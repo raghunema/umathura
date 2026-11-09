@@ -7,6 +7,7 @@ static const uint8_t MAX_FLOORS = 255;
 
 //T_OUTSIDE for out of bounds?? 
 typedef enum {
+    T_UNSET = 0, //for 0-unitialized memory??
     T_OUTSIDE,
     T_FLOOR,
     T_WALL,
@@ -18,6 +19,7 @@ typedef enum {
 //     char sprite;
 //     bool is_blocker; //can not move onto something with the same collision layer
 // } D_Terrain;
+
 
 /*
 Tiles can have: 
@@ -52,3 +54,5 @@ typedef struct {
 //D_Tile make_tile_from_terrain_type(Terrain_Type terrain_type);
 D_Floor floor_from_text(const char *char_map, uint32_t h, uint32_t w);
 D_Tile get_tile(D_Floor floor, Coordinate coors);
+
+D_Floor generate_floor(uint16_t h, uint16_t, uint16_t room_tries);

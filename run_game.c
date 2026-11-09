@@ -39,7 +39,8 @@ int main(void)
     Dungeon d;
     d.num_floors = 1;
     d.curr_floor = 0;
-    d.floors[0] = floor_from_text(test_map, 40, 42);
+    //d.floors[0] = floor_from_text(test_map, 40, 42);
+    d.floors[d.curr_floor] = generate_floor(200, 200, 100);
     render_map(&d);
 
     Coordinate start_coors = {

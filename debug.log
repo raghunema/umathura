@@ -1,728 +1,333 @@
-Play_Win (H, W): (18, 60)
-Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (3, 3)global_new_coors (x, y): (4, 3)
-Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
-Input String: 258global_prev_coors (x, y): (4, 3)global_new_coors (x, y): (4, 4)
-Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (4, 4)global_new_coors (x, y): (5, 4)
-Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (5, 4)global_new_coors (x, y): (6, 4)
-Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (6, 4)global_new_coors (x, y): (7, 4)
-Min_X: 0, Max_x: 33, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (7, 4)global_new_coors (x, y): (8, 4)
-Min_X: 0, Max_x: 34, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (8, 4)global_new_coors (x, y): (9, 4)
-Min_X: 0, Max_x: 35, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (9, 4)global_new_coors (x, y): (10, 4)
-Min_X: 0, Max_x: 36, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (10, 4)global_new_coors (x, y): (11, 4)
-Min_X: 0, Max_x: 37, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (11, 4)global_new_coors (x, y): (12, 4)
-Min_X: 0, Max_x: 38, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (12, 4)global_new_coors (x, y): (13, 4)
-Min_X: 0, Max_x: 39, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (13, 4)global_new_coors (x, y): (14, 4)
-Min_X: 0, Max_x: 40, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (14, 4)global_new_coors (x, y): (15, 4)
-Min_X: 0, Max_x: 41, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (15, 4)global_new_coors (x, y): (16, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (16, 4)global_new_coors (x, y): (17, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (17, 4)global_new_coors (x, y): (18, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (18, 4)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (20, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (20, 4)global_new_coors (x, y): (21, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 258global_prev_coors (x, y): (21, 4)global_new_coors (x, y): (21, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 258global_prev_coors (x, y): (21, 5)global_new_coors (x, y): (21, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (21, 6)global_new_coors (x, y): (22, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (22, 6)global_new_coors (x, y): (23, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (23, 6)global_new_coors (x, y): (24, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (24, 6)global_new_coors (x, y): (25, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (25, 6)global_new_coors (x, y): (26, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 261global_prev_coors (x, y): (26, 6)global_new_coors (x, y): (27, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
-Input String: 258global_prev_coors (x, y): (27, 6)global_new_coors (x, y): (27, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (27, 7)global_new_coors (x, y): (27, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (27, 8)global_new_coors (x, y): (27, 9)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 14
-Input String: 258global_prev_coors (x, y): (27, 9)global_new_coors (x, y): (27, 10)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 15
-Input String: 258global_prev_coors (x, y): (27, 10)global_new_coors (x, y): (27, 11)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 16
-Input String: 258global_prev_coors (x, y): (27, 11)global_new_coors (x, y): (27, 12)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 17
-Input String: 258global_prev_coors (x, y): (27, 12)global_new_coors (x, y): (27, 13)
-Min_X: 0, Max_x: 42, Min_Y: 1, Max_Y: 18
-Input String: 258global_prev_coors (x, y): (27, 13)global_new_coors (x, y): (27, 14)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 261global_prev_coors (x, y): (27, 14)global_new_coors (x, y): (28, 14)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 261global_prev_coors (x, y): (28, 14)global_new_coors (x, y): (29, 14)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 261global_prev_coors (x, y): (29, 14)global_new_coors (x, y): (30, 14)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 258global_prev_coors (x, y): (30, 14)global_new_coors (x, y): (30, 15)
-Min_X: 0, Max_x: 42, Min_Y: 3, Max_Y: 20
-Input String: 258global_prev_coors (x, y): (30, 15)global_new_coors (x, y): (30, 16)
-Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
-Input String: 260global_prev_coors (x, y): (30, 16)global_new_coors (x, y): (29, 16)
-Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
-Input String: 260global_prev_coors (x, y): (29, 16)global_new_coors (x, y): (28, 16)
-Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
-Input String: 260global_prev_coors (x, y): (28, 16)global_new_coors (x, y): (27, 16)
-Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
-Input String: 258global_prev_coors (x, y): (27, 16)global_new_coors (x, y): (27, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (27, 17)global_new_coors (x, y): (26, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (26, 17)global_new_coors (x, y): (25, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (25, 17)global_new_coors (x, y): (24, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (24, 17)global_new_coors (x, y): (23, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (23, 17)global_new_coors (x, y): (22, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (22, 17)global_new_coors (x, y): (21, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (21, 17)global_new_coors (x, y): (20, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (20, 17)global_new_coors (x, y): (19, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (19, 17)global_new_coors (x, y): (18, 17)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 259global_prev_coors (x, y): (18, 17)global_new_coors (x, y): (18, 16)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 259global_prev_coors (x, y): (18, 16)global_new_coors (x, y): (18, 15)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (18, 15)global_new_coors (x, y): (17, 15)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (17, 15)global_new_coors (x, y): (16, 15)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 259global_prev_coors (x, y): (16, 15)global_new_coors (x, y): (16, 14)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 259global_prev_coors (x, y): (16, 14)global_new_coors (x, y): (16, 13)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 260global_prev_coors (x, y): (16, 13)global_new_coors (x, y): (15, 13)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 259global_prev_coors (x, y): (15, 13)global_new_coors (x, y): (15, 12)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 259global_prev_coors (x, y): (15, 12)global_new_coors (x, y): (15, 11)
-Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
-Input String: 259global_prev_coors (x, y): (15, 11)global_new_coors (x, y): (15, 10)
-Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
-Input String: 259global_prev_coors (x, y): (15, 10)global_new_coors (x, y): (15, 9)
-Min_X: 0, Max_x: 42, Min_Y: 3, Max_Y: 20
-Input String: 259global_prev_coors (x, y): (15, 9)global_new_coors (x, y): (15, 8)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 261global_prev_coors (x, y): (15, 8)global_new_coors (x, y): (16, 8)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 261global_prev_coors (x, y): (16, 8)global_new_coors (x, y): (17, 8)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 261global_prev_coors (x, y): (17, 8)global_new_coors (x, y): (18, 8)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 261global_prev_coors (x, y): (18, 8)global_new_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
-Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 1, Max_Y: 18
-Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 17
-Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 16
-Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 15
-Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 14
-Input String: 259global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 2)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 1)global_new_coors (x, y): (19, 2)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 2)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 1)global_new_coors (x, y): (19, 2)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 2)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 1)global_new_coors (x, y): (19, 2)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 2)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 259global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 259global_prev_coors (x, y): (19, 1)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 1)global_new_coors (x, y): (19, 2)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 3)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
-Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 258global_prev_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
-Input String: 410global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 8)
-Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Play_Win (H, W): (54, 201)
+(y,x): 81, 81; (h,w): 5, 5
+(y,x): 68, 68; (h,w): 22, 22
+(y,x): 119, 119; (h,w): 4, 4
+(y,x): 54, 54; (h,w): 20, 20
+(y,x): 127, 127; (h,w): 24, 24
+(y,x): 174, 174; (h,w): 16, 16
+(y,x): 145, 145; (h,w): 19, 19
+(y,x): 94, 94; (h,w): 10, 10
+(y,x): 31, 31; (h,w): 12, 12
+(y,x): 63, 63; (h,w): 25, 25
+(y,x): 167, 167; (h,w): 3, 3
+(y,x): 138, 138; (h,w): 15, 15
+(y,x): 49, 49; (h,w): 15, 15
+(y,x): 111, 111; (h,w): 3, 3
+(y,x): 168, 168; (h,w): 25, 25
+(y,x): 74, 74; (h,w): 12, 12
+(y,x): 53, 53; (h,w): 10, 10
+(y,x): 83, 83; (h,w): 19, 19
+(y,x): 59, 59; (h,w): 16, 16
+(y,x): 46, 46; (h,w): 24, 24
+(y,x): 151, 151; (h,w): 20, 20
+(y,x): 70, 70; (h,w): 4, 4
+(y,x): 159, 159; (h,w): 22, 22
+(y,x): 154, 154; (h,w): 5, 5
+(y,x): 117, 117; (h,w): 22, 22
+(y,x): 70, 70; (h,w): 4, 4
+(y,x): 103, 103; (h,w): 20, 20
+(y,x): 30, 30; (h,w): 24, 24
+(y,x): 151, 151; (h,w): 16, 16
+(y,x): 30, 30; (h,w): 19, 19
+(y,x): 31, 31; (h,w): 10, 10
+(y,x): 2, 2; (h,w): 12, 12
+(y,x): 14, 14; (h,w): 25, 25
+(y,x): 21, 21; (h,w): 3, 3
+(y,x): 18, 18; (h,w): 15, 15
+(y,x): 121, 121; (h,w): 15, 15
+(y,x): 50, 50; (h,w): 3, 3
+(y,x): 154, 154; (h,w): 25, 25
+(y,x): 131, 131; (h,w): 12, 12
+(y,x): 98, 98; (h,w): 10, 10
+(y,x): 25, 25; (h,w): 19, 19
+(y,x): 174, 174; (h,w): 16, 16
+(y,x): 139, 139; (h,w): 24, 24
+(y,x): 34, 34; (h,w): 20, 20
+(y,x): 119, 119; (h,w): 4, 4
+(y,x): 34, 34; (h,w): 22, 22
+(y,x): 178, 178; (h,w): 5, 5
+(y,x): 128, 128; (h,w): 22, 22
+(y,x): 119, 119; (h,w): 4, 4
+(y,x): 118, 118; (h,w): 20, 20
+(y,x): 107, 107; (h,w): 24, 24
+(y,x): 174, 174; (h,w): 16, 16
+(y,x): 100, 100; (h,w): 19, 19
+(y,x): 54, 54; (h,w): 10, 10
+(y,x): 175, 175; (h,w): 12, 12
+(y,x): 21, 21; (h,w): 25, 25
+(y,x): 67, 67; (h,w): 3, 3
+(y,x): 59, 59; (h,w): 15, 15
+(y,x): 169, 169; (h,w): 15, 15
+(y,x): 181, 181; (h,w): 3, 3
+(y,x): 21, 21; (h,w): 25, 25
+(y,x): 14, 14; (h,w): 12, 12
+(y,x): 39, 39; (h,w): 10, 10
+(y,x): 152, 152; (h,w): 19, 19
+(y,x): 151, 151; (h,w): 16, 16
+(y,x): 54, 54; (h,w): 24, 24
+(y,x): 63, 63; (h,w): 20, 20
+(y,x): 70, 70; (h,w): 4, 4
+(y,x): 49, 49; (h,w): 22, 22
+(y,x): 153, 153; (h,w): 5, 5
+(y,x): 101, 101; (h,w): 22, 22
+(y,x): 70, 70; (h,w): 4, 4
+(y,x): 99, 99; (h,w): 20, 20
+(y,x): 6, 6; (h,w): 24, 24
+(y,x): 59, 59; (h,w): 16, 16
+(y,x): 174, 174; (h,w): 19, 19
+(y,x): 163, 163; (h,w): 10, 10
+(y,x): 174, 174; (h,w): 12, 12
+(y,x): 84, 84; (h,w): 25, 25
+(y,x): 108, 108; (h,w): 3, 3
+(y,x): 76, 76; (h,w): 15, 15
+(y,x): 8, 8; (h,w): 15, 15
+(y,x): 110, 110; (h,w): 3, 3
+(y,x): 119, 119; (h,w): 25, 25
+(y,x): 99, 99; (h,w): 12, 12
+(y,x): 66, 66; (h,w): 10, 10
+(y,x): 102, 102; (h,w): 19, 19
+(y,x): 174, 174; (h,w): 16, 16
+(y,x): 143, 143; (h,w): 24, 24
+(y,x): 58, 58; (h,w): 20, 20
+(y,x): 119, 119; (h,w): 4, 4
+(y,x): 26, 26; (h,w): 22, 22
+(y,x): 79, 79; (h,w): 5, 5
+(y,x): 36, 36; (h,w): 22, 22
+(y,x): 119, 119; (h,w): 4, 4
+(y,x): 46, 46; (h,w): 20, 20
+(y,x): 79, 79; (h,w): 24, 24
+(y,x): 174, 174; (h,w): 16, 16
+(y,x): 71, 71; (h,w): 19, 19
+(y,x): 168, 168; (h,w): 10, 10
+(y,x): 187, 187; (h,w): 12, 12
+Generated Floor:
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+  ############                                                                                                                                                                                          
+  #..........#                                                                                                                                                                                          
+  #..........#                                                                                                                                                                                          
+  #..........#                                                                                                                                                                                          
+  #...########################                                                                                                                                                                          
+  #...#......................#                                                                                                                                                                          
+  #...#.###############......#                                                                                                                                                                          
+  #...#.#.............#......#                                                                                                                                                                          
+  #...#.#.............#......#                                                                                                                                                                          
+  #...#.#.............#......#                                                                                                                                                                          
+  #...#.#.............#......#                                                                                                                                                                          
+  #####.#.............#......#                                                                                                                                                                          
+      #.#.............#......##########                                                                                                                                                                 
+      #.#.............#......#........#                                                                                                                                                                 
+      #.#.............#......#........#                                                                                                                                                                 
+      #.#.............#......#........#                                                                                                                                                                 
+      #.#.............#......####.....#                                                                                                                                                                 
+      #.#.............#......#..#.....#                                                                                                                                                                 
+      #.#.............#......#..#.....#                                                                                                                                                                 
+      #.#.............#......#################                                                                                                                                                          
+      #.###############......#...............#                                                                                                                                                          
+      #......................#...............#                                                                                                                                                          
+      #......................#...............#                                                                                                                                                          
+      #......................#...............#                                                                                                                                                          
+      #...................######################                                                                                                                                                        
+      #...................#....................#                                                                                                                                                        
+      #...................#....................#                                                                                                                                                        
+      #####################....................#                                                                                                                                                        
+              #...#..#....#....................#######                                                                                                                                                  
+              #...#..#....#....................##....#                                                                                                                                                  
+              #...####....#....................##....#                                                                                                                                                  
+              #......#....#....................##....#                                                                                                                                                  
+              #......#....#....................#########                                                                                                                                                
+              #......#....#....................#.......#                                                                                                                                                
+              #......#....#.........######################                                                                                                                                              
+              #......#....#.........#....................#                                                                                                                                              
+              ########....#.........#....................#                                                                                                                                              
+                     #....#.........#....................#                                                                                                                                              
+                     #....#.........#....................#                                                                                                                                              
+                     #....#.........#....................#                                                                                                                                              
+                     #....#.........#....................#                                                                                                                                              
+                     #....#.........#....................#                                                                                                                                              
+                     #....#.........#....................#                                                                                                                                              
+                     ######.........#....................#                                                                                                                                              
+                          #.........#.........########################                                                                                                                                  
+                          ###########.........#..................#...#                                                                                                                                  
+                              #####.#.........#..................#...#                                                                                                                                  
+                              #...#.#.........#..................######                                                                                                                                 
+                              #...#.#.........#..................#....#                                                                                                                                 
+                              #...#.#.........#..................#....#                                                                                                                                 
+                              #...#.#.........#..................#....#                                                                                                                                 
+                              #####.#.........#..................#....#                                                                                                                                 
+                                  #.#.........#..................#....########                                                                                                                          
+                                  ###.........#..................#....#......#                                                                                                                          
+                                    #.........#..................#....#......#                                                                                                                          
+                                    ###########..................#....#......#                                                                                                                          
+                                              #..................#############                                                                                                                          
+                                              #..................#...........#                                                                                                                          
+                                              #..................#...........#                                                                                                                          
+                                              #..................#...........#                                                                                                                          
+                                              #..................#...........#                                                                                                                          
+                                              #..................#...........###########                                                                                                                
+                                              #..................#...........#....#....#                                                                                                                
+                                              ####################...........#....#....#                                                                                                                
+                                              #..#........#..................#....#....#                                                                                                                
+                                              #..#........#..................#....#....#                                                                                                                
+                                              #..#........#..................#....#....###                                                                                                              
+                                              ####........#..................#....#....#.#                                                                                                              
+                                                 ##########..................#....#....#.#                                                                                                              
+                                                      #...#............###################                                                                                                              
+                                                      #...#............#.................#                                                                                                              
+                                                      #...#............#.................#                                                                                                              
+                                                      #...#............#.................#                                                                                                              
+                                                      #...#............#.................#                                                                                                              
+                                                      #...#............#.................##                                                                                                             
+                                                      ##################.................##                                                                                                             
+                                                               #.......#.................##                                                                                                             
+                                                               #.......#.................##############                                                                                                 
+                                                               #.......#.................#............#                                                                                                 
+                                                               #.......#.................#............#                                                                                                 
+                                                               #########.................#............#                                                                                                 
+                                                               #.......#.................#............#                                                                                                 
+                                                               #.......#.................#............#######                                                                                           
+                                                               #.......#.................#............#.....#                                                                                           
+                                                               #.......#.................#............#.....#                                                                                           
+                                                               #########.................#............#.....#                                                                                           
+                                                                    #..#.................#............#.....#                                                                                           
+                                                                    ######################............#.....#                                                                                           
+                                                                            ####......................#.....#                                                                                           
+                                                                               #......................#.....#                                                                                           
+                                                                               #......................#.....#                                                                                           
+                                                                               #......................#.....#                                                                                           
+                                                                               #......................#.....#                                                                                           
+                                                                               #......................#.....#                                                                                           
+                                                                               #......................#.....#                                                                                           
+                                                                               #......................#.....#                                                                                           
+                                                                               #......................#.....#                                                                                           
+                                                                               #......................#################                                                                                 
+                                                                               #......................#.......#.......#                                                                                 
+                                                                               #......................#.......#.......#####                                                                             
+                                                                               ##########################################.#                                                                             
+                                                                                    #..............#..#.................#.#                                                                             
+                                                                                    #..............#..#.................#.#                                                                             
+                                                                                    #..............#..#.................#.#                                                                             
+                                                                                    #..............#..#.................#.#                                                                             
+                                                                                    #..............#..#.................#.#########                                                                     
+                                                                                    ################..#.................#.#.......#                                                                     
+                                                                                                   #..#.................#.#.......#                                                                     
+                                                                                                   ####.................#.#.......#                                                                     
+                                                                                                   #..#.................#.#.......#                                                                     
+                                                                                                   #..#.................#.#.......#                                                                     
+                                                                                                   #..#.................#.#.......#                                                                     
+                                                                                                   #..#.................#.#.......#                                                                     
+                                                                                                   #..#.................#.#.......#                                                                     
+                                                                                                   #..#.................#.#.......#                                                                     
+                                                                                                   #..#.................#.#.......#########                                                             
+                                                                                                   ####.................#.#.......#########                                                             
+                                                                                                     ##................#########################                                                        
+                                                                                                     ###################..#....................#                                                        
+                                                                                                     #.................#..#....................#                                                        
+                                                                                                     ######################....................#                                                        
+                                                                                                           #...........#.......................#                                                        
+                                                                                                           #...........#.......................#                                                        
+                                                                                                           #...........#.......................#                                                        
+                                                                                                           #...........#.......................#                                                        
+                                                                                                           #...........#.......................########                                                 
+                                                                                                           #...........#.......................########                                                 
+                                                                                                           #...........#.......................#.....##                                                 
+                                                                                                           #############.......................#.....##                                                 
+                                                                                                                     ###.......................#.....##                                                 
+                                                                                                                     ###.......................#.....##                                                 
+                                                                                                                     ###.......................#.....##                                                 
+                                                                                                                     ###.......................#.....##                                                 
+                                                                                                                     ###.......................#.....##                                                 
+                                                                                                                     ###.......................#.....##                                                 
+                                                                                                                     ###.......................#.....##                                                 
+                                                                                                                     ###.......................#.....####                                               
+                                                                                                                       #.......................#.....##############                                     
+                                                                                                                       #.......................#.....#............#                                     
+                                                                                                                       #.......................#.....#............#                                     
+                                                                                                                       #.......................#.....#............#                                     
+                                                                                                                       ################################################                                 
+                                                                                                                               ##..............#......................#                                 
+                                                                                                                               ##..............#......................#                                 
+                                                                                                                               ##..............#......................#                                 
+                                                                                                                               ##..............#......................#                                 
+                                                                                                                               ##..............#......................#                                 
+                                                                                                                               #################......................#                                 
+                                                                                                                               #############...#......................#                                 
+                                                                                                                                          ##...#......................#####                             
+                                                                                                                                          ##...#......................#####                             
+                                                                                                                                           #...#......................#...#                             
+                                                                                                                                           #...#......................#...#########                     
+                                                                                                                                           #...#......................#...#.......#                     
+                                                                                                                                           #...#......................#...#.......#                     
+                                                                                                                                           #...#......................#...#.......#                     
+                                                                                                                                           #...#......................#...#.......#                     
+                                                                                                                                           #...#......................#...#.......###                   
+                                                                                                                                           #...#......................#...#.......#.#                   
+                                                                                                                                           #...#......................#...#.......#.#                   
+                                                                                                                                           #####......................#...#.......#.#                   
+                                                                                                                                               #......................#######.....#.#                   
+                                                                                                                                               #......................#.....#.....#.#                   
+                                                                                                                                               #......................#.....#.....#.#                   
+                                                                                                                                               ########################.....#.....#.#                   
+                                                                                                                                                       ##..........#........#.....#.#                   
+                                                                                                                                                       ##..........#....###########.#############       
+                                                                                                                                                       ##..........#....#........#######........#       
+                                                                                                                                                       #############....#........#.....#........#       
+                                                                                                                                                          #........#....#........#.....#........#       
+                                                                                                                                                          #........######........#.....#........#       
+                                                                                                                                                          #.............#........#.....#........#       
+                                                                                                                                                          #.............#........################       
+                                                                                                                                                          #.............#........#...........#..#       
+                                                                                                                                                          #.............#........#...........#..#       
+                                                                                                                                                          #.............##########...........#..#       
+                                                                                                                                                          ################....#..............#..#       
+                                                                                                                                                               #.........#....#..............#..#       
+                                                                                                                                                               ###########....#..............#..#       
+                                                                                                                                                                        ##....#..............#..#       
+                                                                                                                                                                        ##....#..............#..#       
+                                                                                                                                                                        #######..............#..#       
+                                                                                                                                                                        #.....#..............#..#       
+                                                                                                                                                                        #.....#..............#..#       
+                                                                                                                                                                        #.....#..............#..#       
+                                                                                                                                                                        #.....#............############ 
+                                                                                                                                                                        #.....#............#..........# 
+                                                                                                                                                                        #.....##############..........# 
+                                                                                                                                                                        #.....#............#..........# 
+                                                                                                                                                                        #.....#............#..........# 
+                                                                                                                                                                        ####################..........# 
+                                                                                                                                                                                           #..........# 
+                                                                                                                                                                                           #..........# 
+                                                                                                                                                                                           #..........# 
+                                                                                                                                                                                           #..........# 
+                                                                                                                                                                                           #..........# 
+                                                                                                                                                                                           ############ 
+                                                                                                                                                                                                        
+
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 29
+Input String: 258global_prev_coors (x, y): (3, 3)global_new_coors (x, y): (3, 4)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 29
+Input String: 258global_prev_coors (x, y): (3, 4)global_new_coors (x, y): (3, 5)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 29
+Input String: 258global_prev_coors (x, y): (3, 5)global_new_coors (x, y): (3, 6)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 29
+Input String: 261global_prev_coors (x, y): (3, 6)global_new_coors (x, y): (4, 6)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 29
+Input String: 261global_prev_coors (x, y): (4, 6)global_new_coors (x, y): (5, 6)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 29
+Input String: 261global_prev_coors (x, y): (5, 6)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 29
+Input String: 258global_prev_coors (x, y): (5, 6)global_new_coors (x, y): (5, 7)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 30
+Input String: 258global_prev_coors (x, y): (5, 7)global_new_coors (x, y): (5, 8)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 31
+Input String: 258global_prev_coors (x, y): (5, 8)global_new_coors (x, y): (5, 9)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 32
+Input String: 258global_prev_coors (x, y): (5, 9)global_new_coors (x, y): (5, 10)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 33
+Input String: 258global_prev_coors (x, y): (5, 10)global_new_coors (x, y): (5, 11)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 34
+Input String: 258global_prev_coors (x, y): (5, 11)global_new_coors (x, y): (5, 12)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 35
+Input String: 258global_prev_coors (x, y): (5, 12)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 35
+Input String: 258global_prev_coors (x, y): (5, 12)
+Min_X: 0, Max_x: 102, Min_Y: 0, Max_Y: 35
