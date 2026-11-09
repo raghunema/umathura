@@ -172,7 +172,7 @@ void update_camera_position(Player *p, Camera *c) {
 }
 
 //Write a view into camera to then render
-void set_camera_view(Camera *c, D_Floor *f, Player *p) {
+void set_camera_view_temp(Camera *c, D_Floor *f, Player *p) {
 	//resetting camera_view
 	memset(c->camera_view, ' ', (size_t)c->win_h * c->win_w);
 
@@ -223,11 +223,102 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 	c->camera_view[player_flat_position] = p->sprite;
 
 	print_debug("Camera View:\n");
-	for (int y = 0; y < c->win_h; y++) {
+	for (size_t y = 0; y < c->win_h; y++) {
 		print_debug("%.*s\n", (int)c->win_w, &c->camera_view[(size_t)y * c->win_w]);
 	}
 	print_debug("+%.*s+\n", (int)c->win_w, "----------------------------------------------------------------");
 }
+
+void set_camera_view(Camera *c, D_Floor *f, Player *p) {
+
+	//resetting camera_view
+	memset(c->camera_view, ' ', (size_t)c->win_h * c->win_w);
+
+	/* 
+		Camera is at position (3,3)
+		play_win d = (54, 201)
+		play_win midpoint = (27, 100)
+
+		Need to shit (3,3) and render it at (27,100)
+	*/
+
+	Coordinate shift_coors_by = {
+		.y = c->map_position.y - c->win_midpoint.y,
+		.x = c->map_position.x - c->win_midpoint.x
+	};
+
+	/* 
+		For the camera at (a, b), get view bounds
+		min_x = (a - 1/2 camera_w) || 0
+		max_x = (a + 1/2 camera_w) || floor_w
+		min_y = (b - 1/2 camera_h) || 0
+		max_y = (b + 1/2 camera_h) || floor_h
+	*/
+
+	int16_t min_x = c->map_position.x - (c->win_w / 2);
+	min_x = (min_x > 0) ? min_x : 0;
+
+	int16_t max_x = c->map_position.x +((c->win_w / 2) - 1);
+	max_x = (max_x < (int16_t) f->floor_width) ? max_x : f->floor_width;
+
+	int16_t min_y = c->map_position.y - (c->win_h / 2);
+	min_y = (min_y > 0) ? min_y : 0;
+
+	int16_t max_y = c->map_position.y + ((c->win_h / 2) - 1);
+	max_y = (max_y < (int16_t) f->floor_height) ? max_y : f->floor_height;
+
+	print_debug("\nMin_X: %d, Max_x: %d, Min_Y: %d, Max_Y: %d\n", min_x, max_x, min_y, max_y);
+
+	for (size_t i = 0; i < (f->floor_height * f->floor_width); i++) {
+		/*
+			For Each tiles in flat map of the floor
+				Check if it is in Camera View
+				Convert Tile into Floor-Coorindate
+				Shift Cooridnate for Map
+				Turn back into flat position
+				Add into camera view
+		*/	
+		
+		Coordinate global_coor = coordinate_from_flat_map(i, f->floor_width, f->floor_height);
+		//print_debug("global_coor (y,x): (%zu, %zu)\n", global_coor.y, global_coor.x);
+
+		if (
+			((int16_t) global_coor.x >= min_x) &&
+			((int16_t) global_coor.x <= max_x) &&
+			((int16_t) global_coor.y >= min_y) &&
+			((int16_t) global_coor.y <= max_y)
+		) { 
+			Coordinate shifted_coor = {
+				.y = global_coor.y - shift_coors_by.y,
+				.x = global_coor.x - shift_coors_by.x
+			};
+
+			size_t new_flat_position = flat_poistion_from_coordinate(shifted_coor, c->win_w, c->win_h);
+			c->camera_view[new_flat_position] = f->tiles[i].sprite;
+
+			//print_debug("(y,x) Global_coor:(%zu, %zu); Shifted_coors:(%zu, %zu); New_flat_positin:%zu\n", global_coor.y, global_coor.x, shifted_coor.y, shifted_coor.x, new_flat_position);
+		}		
+	}
+
+	//get player_position, shift, and add onto camera_view as well
+	Coordinate player_shifted_coor = {
+		.y = p->coors.y - shift_coors_by.y,
+		.x = p->coors.x - shift_coors_by.x
+	};
+	size_t player_flat_position = flat_poistion_from_coordinate(player_shifted_coor, c->win_w, c->win_h);
+	c->camera_view[player_flat_position] = p->sprite;
+
+	// print_debug("Camera View String:\n");
+	// print_debug("%s", c->camera_view);
+
+	// print_debug("\nCamera View:\n");
+	// for (size_t y = 0; y < c->win_h; y++) {
+	// 	print_debug("%.*s\n", (int)c->win_w, &c->camera_view[(size_t)y * c->win_w]);
+	// }
+	// print_debug("+%.*s+\n", (int)c->win_w, "----------------------------------------------------------------");
+
+}
+
 
 void render_camera_view(Camera *c) {
 	size_t h_cam = c->win_h;

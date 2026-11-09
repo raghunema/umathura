@@ -1,291 +1,728 @@
-Play_Win (H, W): (27, 66)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #..@..#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #.........###.................###...
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 3)global_new_coors (x, y): (3, 4)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #..@.........................#  #...
-.....#                        #.........###.................###...
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 4)global_new_coors (x, y): (3, 5)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #..@......###.................###...
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 5)global_new_coors (x, y): (3, 6)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #.........###.................###...
-.....#                        #..@.....#   #......................
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 6)global_new_coors (x, y): (3, 7)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #.........###.................###...
-.....#                        #........#   #......................
-.....#                        #..@.....#   #......................
-.....#                        #........#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-                              #........#   #.....................#
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 7)global_new_coors (x, y): (3, 8)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #.........###.................###...
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #..@.....#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-                              #........#   #.....................#
-######                        #........#   #......................
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 8)global_new_coors (x, y): (3, 9)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #.........###.................###...
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #..@..###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-                              #........#   #.....................#
-######                        #........#   #......................
-.....#                        ##########   #######################
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 9)global_new_coors (x, y): (3, 10)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #.........###.................###...
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #..@..#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-                              #........#   #.....................#
-######                        #........#   #......................
-.....#                        ##########   #######################
-######                              .                             
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 10)global_new_coors (x, y): (3, 11)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #.........###.................###...
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #..@..#   #......#       #......####
-######                        #.....#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-                              #........#   #.....................#
-######                        #........#   #......................
-.....#                        ##########   #######################
-######                              .                             
-                                                                  
-+----------------------------------------------------------------+
-Input String: 258global_prev_coors (x, y): (3, 11)global_new_coors (x, y): (3, 12)Camera View:
-                                                                  
-                                                                  
-                                                                  
-                                                                  
-                              #######   ################      ####
-######                        #.....#   #..............#      #...
-.....#                        #.....#   #...............#     #...
-.....#                        #.....#####................ #   #...
-.....#                        #............................#  #...
-.....#                        #.........###.................###...
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #........#   #......................
-.....#                        #.....###    ##....#######..........
-.....#                        #.....#    ##.....#      #..........
-.....#                        #.....#   #......#       #......####
-######                        #..@..#   #......#       #......#   
-                              #.....#####.......#      #......#   
-                              #.................#      #......#   
-                              #.........###......#     #.......#  
-                              #........#   #......######........# 
-                              #........#   #.....................#
-######                        #........#   #......................
-.....#                        ##########   #######################
-######                              .                             
-                                                                  
-                                                                  
-+----------------------------------------------------------------+
-Input String: 113
+Play_Win (H, W): (18, 60)
+Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (3, 3)global_new_coors (x, y): (4, 3)
+Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
+Input String: 258global_prev_coors (x, y): (4, 3)global_new_coors (x, y): (4, 4)
+Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (4, 4)global_new_coors (x, y): (5, 4)
+Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (5, 4)global_new_coors (x, y): (6, 4)
+Min_X: 0, Max_x: 32, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (6, 4)global_new_coors (x, y): (7, 4)
+Min_X: 0, Max_x: 33, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (7, 4)global_new_coors (x, y): (8, 4)
+Min_X: 0, Max_x: 34, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (8, 4)global_new_coors (x, y): (9, 4)
+Min_X: 0, Max_x: 35, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (9, 4)global_new_coors (x, y): (10, 4)
+Min_X: 0, Max_x: 36, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (10, 4)global_new_coors (x, y): (11, 4)
+Min_X: 0, Max_x: 37, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (11, 4)global_new_coors (x, y): (12, 4)
+Min_X: 0, Max_x: 38, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (12, 4)global_new_coors (x, y): (13, 4)
+Min_X: 0, Max_x: 39, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (13, 4)global_new_coors (x, y): (14, 4)
+Min_X: 0, Max_x: 40, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (14, 4)global_new_coors (x, y): (15, 4)
+Min_X: 0, Max_x: 41, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (15, 4)global_new_coors (x, y): (16, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (16, 4)global_new_coors (x, y): (17, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (17, 4)global_new_coors (x, y): (18, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (18, 4)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (20, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (20, 4)global_new_coors (x, y): (21, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 258global_prev_coors (x, y): (21, 4)global_new_coors (x, y): (21, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 258global_prev_coors (x, y): (21, 5)global_new_coors (x, y): (21, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (21, 6)global_new_coors (x, y): (22, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (22, 6)global_new_coors (x, y): (23, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (23, 6)global_new_coors (x, y): (24, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (24, 6)global_new_coors (x, y): (25, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (25, 6)global_new_coors (x, y): (26, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 261global_prev_coors (x, y): (26, 6)global_new_coors (x, y): (27, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 11
+Input String: 258global_prev_coors (x, y): (27, 6)global_new_coors (x, y): (27, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (27, 7)global_new_coors (x, y): (27, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (27, 8)global_new_coors (x, y): (27, 9)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 14
+Input String: 258global_prev_coors (x, y): (27, 9)global_new_coors (x, y): (27, 10)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 15
+Input String: 258global_prev_coors (x, y): (27, 10)global_new_coors (x, y): (27, 11)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 16
+Input String: 258global_prev_coors (x, y): (27, 11)global_new_coors (x, y): (27, 12)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 17
+Input String: 258global_prev_coors (x, y): (27, 12)global_new_coors (x, y): (27, 13)
+Min_X: 0, Max_x: 42, Min_Y: 1, Max_Y: 18
+Input String: 258global_prev_coors (x, y): (27, 13)global_new_coors (x, y): (27, 14)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 261global_prev_coors (x, y): (27, 14)global_new_coors (x, y): (28, 14)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 261global_prev_coors (x, y): (28, 14)global_new_coors (x, y): (29, 14)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 261global_prev_coors (x, y): (29, 14)global_new_coors (x, y): (30, 14)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 258global_prev_coors (x, y): (30, 14)global_new_coors (x, y): (30, 15)
+Min_X: 0, Max_x: 42, Min_Y: 3, Max_Y: 20
+Input String: 258global_prev_coors (x, y): (30, 15)global_new_coors (x, y): (30, 16)
+Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
+Input String: 260global_prev_coors (x, y): (30, 16)global_new_coors (x, y): (29, 16)
+Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
+Input String: 260global_prev_coors (x, y): (29, 16)global_new_coors (x, y): (28, 16)
+Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
+Input String: 260global_prev_coors (x, y): (28, 16)global_new_coors (x, y): (27, 16)
+Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
+Input String: 258global_prev_coors (x, y): (27, 16)global_new_coors (x, y): (27, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (27, 17)global_new_coors (x, y): (26, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (26, 17)global_new_coors (x, y): (25, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (25, 17)global_new_coors (x, y): (24, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (24, 17)global_new_coors (x, y): (23, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (23, 17)global_new_coors (x, y): (22, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (22, 17)global_new_coors (x, y): (21, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (21, 17)global_new_coors (x, y): (20, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (20, 17)global_new_coors (x, y): (19, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (19, 17)global_new_coors (x, y): (18, 17)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 259global_prev_coors (x, y): (18, 17)global_new_coors (x, y): (18, 16)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 259global_prev_coors (x, y): (18, 16)global_new_coors (x, y): (18, 15)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (18, 15)global_new_coors (x, y): (17, 15)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (17, 15)global_new_coors (x, y): (16, 15)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 259global_prev_coors (x, y): (16, 15)global_new_coors (x, y): (16, 14)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 259global_prev_coors (x, y): (16, 14)global_new_coors (x, y): (16, 13)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 260global_prev_coors (x, y): (16, 13)global_new_coors (x, y): (15, 13)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 259global_prev_coors (x, y): (15, 13)global_new_coors (x, y): (15, 12)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 259global_prev_coors (x, y): (15, 12)global_new_coors (x, y): (15, 11)
+Min_X: 0, Max_x: 42, Min_Y: 5, Max_Y: 22
+Input String: 259global_prev_coors (x, y): (15, 11)global_new_coors (x, y): (15, 10)
+Min_X: 0, Max_x: 42, Min_Y: 4, Max_Y: 21
+Input String: 259global_prev_coors (x, y): (15, 10)global_new_coors (x, y): (15, 9)
+Min_X: 0, Max_x: 42, Min_Y: 3, Max_Y: 20
+Input String: 259global_prev_coors (x, y): (15, 9)global_new_coors (x, y): (15, 8)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 261global_prev_coors (x, y): (15, 8)global_new_coors (x, y): (16, 8)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 261global_prev_coors (x, y): (16, 8)global_new_coors (x, y): (17, 8)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 261global_prev_coors (x, y): (17, 8)global_new_coors (x, y): (18, 8)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 261global_prev_coors (x, y): (18, 8)global_new_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 2, Max_Y: 19
+Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 1, Max_Y: 18
+Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 17
+Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 16
+Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 15
+Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 14
+Input String: 259global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 2)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 1)global_new_coors (x, y): (19, 2)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 2)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 1)global_new_coors (x, y): (19, 2)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 2)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 1)global_new_coors (x, y): (19, 2)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 2)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 259global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 259global_prev_coors (x, y): (19, 1)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 1)global_new_coors (x, y): (19, 2)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 2)global_new_coors (x, y): (19, 3)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 3)global_new_coors (x, y): (19, 4)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 4)global_new_coors (x, y): (19, 5)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 5)global_new_coors (x, y): (19, 6)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 6)global_new_coors (x, y): (19, 7)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 12
+Input String: 258global_prev_coors (x, y): (19, 7)global_new_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 258global_prev_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13
+Input String: 410global_prev_coors (x, y): (19, 8)global_new_coors (x, y): (19, 8)
+Min_X: 0, Max_x: 42, Min_Y: 0, Max_Y: 13

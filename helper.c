@@ -1,5 +1,6 @@
 #include "helpers.h"
 #include "ncurses.h"
+#include <math.h>
 
 Coordinate get_new_coors_from_input(Coordinate prev_coors, int ch) {
     Coordinate new_coors = {
