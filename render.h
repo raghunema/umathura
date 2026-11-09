@@ -10,11 +10,11 @@
 typedef struct {
     Coordinate map_position;
     Coordinate win_midpoint;
-    size_t win_h; // play_win width
-    size_t win_w; // play_win height
+    uint16_t win_h; // play_win width
+    uint16_t win_w; // play_win height
     
     //when to move camera if player is too far
-    size_t max_distance_from_player;
+    uint16_t max_distance_from_player;
 
     //array of characters(?) that the will be drawn on play_win
     char *camera_view;

@@ -39,9 +39,9 @@ D_Floor floor_from_text(const char *char_map, uint32_t h, uint32_t w) {
     D_Floor f;
     f.floor_height = h;
     f.floor_width = w;
-    f.tiles = malloc((size_t)w * h * sizeof(D_Tile));
+    f.tiles = malloc((uint32_t)w * h * sizeof(D_Tile));
 
-    for (size_t i = 0; i < (size_t)w * h; i++) {
+    for (uint32_t i = 0; i < (uint32_t)w * h; i++) {
         D_Tile tile;
         if (char_map[i] == '#') {
             tile = make_tile_from_terrain_type(T_WALL);
@@ -64,6 +64,8 @@ typedef struct {
     uint16_t y1;
     uint16_t y2;
     uint16_t h;
+    uint16_t mid_x;
+    uint16_t mid_y;
 } D_Room;
 
 D_Floor generate_floor(uint16_t h, uint16_t w, uint16_t room_tries) {
@@ -73,7 +75,7 @@ D_Floor generate_floor(uint16_t h, uint16_t w, uint16_t room_tries) {
     };
 
     //Allocate memory for a tile array
-    f.tiles = malloc((uint16_t) w * h * sizeof (D_Tile));
+    f.tiles = malloc((uint32_t) w * h * sizeof (D_Tile));
 
     /*
         For 0 to room_tries
@@ -83,48 +85,69 @@ D_Floor generate_floor(uint16_t h, uint16_t w, uint16_t room_tries) {
     */
 
 
-    for (uint16_t i = 0; i < (h * w); i++) {
+    for (uint32_t i = 0; i < (h * w); i++) {
         f.tiles[i] = make_tile_from_terrain_type(T_OUTSIDE);
     }
 
     //Max possible rooms is if all rooms are valid
     D_Room *rooms = malloc(room_tries * sizeof(D_Room));
+    uint16_t room_num = 0;
 
-    for (uint16_t i = 0; i <= room_tries; i++) {
-        D_Room temp_room = {
-            .w = get_random_int(3, (uint16_t) w / 8, i), // picking 8 randomly,
-            .h = get_random_int(3, (uint16_t) h / 8, i), // picking 8 randomly
+    for (uint16_t i = 0; i < room_tries; i++) {
+        D_Room new_room = {
+            .w = get_random_int(3, (uint16_t) w / 4), // picking 4 randomly
+            .h = get_random_int(3, (uint16_t) h / 6), // picking 6 randomly
         };
 
-        uint16_t room_w  = get_random_int(3, (uint16_t) w / 8, i); // picking 8 randomly
-        uint16_t room_h = get_random_int(3, (uint16_t) h / 8, i); // picking 8 randomly
-        
         //Top left corner of the box - needs to shift to account for boundaries
-        uint16_t room_x = get_random_int(0, w - (room_w + 1), i);
-        uint16_t room_y = get_random_int(0, h - (room_h + 1), i);
+        new_room.x1 = get_random_int(0, w - (new_room.w + 1));
+        new_room.x2 = (new_room.x1 + new_room.w); //Do I need to do a -1??
+        new_room.y1 = get_random_int(0, h - (new_room.h + 1));
+        new_room.y2 = (new_room.y1 + new_room.h); 
+        //new
+        
+        print_debug("\nChecking Room: (y1,x1): (%hu, %hu); (h,w): (%hu, %hu); (y2,x2): %hu, %hu", new_room.y1, new_room.x1, new_room.h, new_room.w, new_room.y2, new_room.x2);
 
+        bool add_room = true;
         /*
-            Add collision check here
+            Collision Detection    
         */
+        for (int r = 0; r < room_num; r++) {
+            
+            D_Room temp_room = rooms[r];
 
-        print_debug("\n(y,x): %hu, %hu; (h,w): %hu, %hu", room_y, room_x, room_h, room_w);
+            //Do I need to do a -1 to check overlap??
+            if ((new_room.x1 <= temp_room.x2) &&
+                (new_room.x2 >= temp_room.x1) &&
+                (new_room.y1 <= temp_room.y2) &&
+                (new_room.y2 >= temp_room.y1)
+            ) {
+                add_room = false;
+                break;
+            }
+        };
 
-        for (uint16_t j = room_y; j < (room_y + room_h); j++) {
-            for (uint16_t k = room_x; k < (room_x + room_w); k++) {
-                uint16_t r_index = (j * w) + k;
-                //print_debug("r_index: %hu\n", r_index);
-                //f.tiles[r_index] = make_tile_from_terrain_type(T_FLOOR);
+        if (add_room) {
+            //add room to rooms
+            rooms[room_num] = new_room;
+            room_num++;
 
-                //wall placement
-                if (
-                    j == room_y || 
-                    j == (room_y + room_h - 1) ||
-                    k == room_x || 
-                    k == (room_x + room_w - 1)
-                ) {
-                    f.tiles[r_index] = make_tile_from_terrain_type(T_WALL);
-                } else {
-                    f.tiles[r_index] = make_tile_from_terrain_type(T_FLOOR);
+            //Add to floor (Can separate this out in a diff function later...)
+            for (uint16_t j = new_room.y1; j < new_room.y2; j++) {
+                for (uint16_t k = new_room.x1; k < new_room.x2; k++) {
+                    uint16_t r_index = (j * w) + k;
+
+                    //wall placement checks
+                    if (
+                        j == new_room.y1 || 
+                        j == (new_room.y2 - 1) ||
+                        k == new_room.x1 || 
+                        k == (new_room.x2 - 1)
+                    ) {
+                        f.tiles[r_index] = make_tile_from_terrain_type(T_WALL);
+                    } else {
+                        f.tiles[r_index] = make_tile_from_terrain_type(T_FLOOR);
+                    }
                 }
             }
         }
