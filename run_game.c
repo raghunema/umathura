@@ -36,6 +36,9 @@ int main(void)
     start_ncurses();
     create_screens();
 
+    uint32_t temp_seed = 1794256260;
+    set_seed(temp_seed);
+
     Dungeon d;
     d.num_floors = 1;
     d.curr_floor = 0;
@@ -71,14 +74,14 @@ int main(void)
             .x = p.coors.x,
             .y = p.coors.y
         };
-        print_debug("global_prev_coors (x, y): (%zu, %zu)", prev_coors.x,  prev_coors.y);
+        print_debug("global_prev_coors (x, y): (%hu, %hu)", prev_coors.x,  prev_coors.y);
 
         Coordinate new_coors = get_new_coors_from_input(prev_coors, ch);
         D_Tile new_tile = get_tile(d.floors[d.curr_floor], new_coors);
 
         if (!new_tile.is_blocker) {
             update_character_position(&p, new_coors);
-            print_debug("global_new_coors (x, y): (%zu, %zu)", p.coors.x, p.coors.y);
+            print_debug("global_new_coors (x, y): (%hu, %hu)", p.coors.x, p.coors.y);
 
             //update camera coordinates to follow player
             update_camera_position(&p, &c);

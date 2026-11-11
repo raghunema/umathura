@@ -5,6 +5,10 @@
 #include <time.h>
 #include <math.h>
 
+void set_seed(uint32_t seed) {
+    srand(seed);
+};
+
 Coordinate get_new_coors_from_input(Coordinate prev_coors, int ch) {
     Coordinate new_coors = {
         .x = prev_coors.x,
@@ -35,14 +39,14 @@ Coordinate get_new_coors_from_input(Coordinate prev_coors, int ch) {
 /*
     Given a position from a flat_map, out put a coordinate
 */
-Coordinate coordinate_from_flat_map(size_t i, size_t w, size_t h) {
+Coordinate coordinate_from_flat_map(uint32_t i, uint16_t w, uint16_t h) {
     /*
         Pos i in array[100] which represents a 10w x 10h map
         i = 67 -> Coor (6y, 7x)
     */
 
-    size_t row = (size_t) i / w; // Floor Operation of division
-    size_t col = i - (row * w); // Techincally just the modulo operator?
+    uint16_t row = (uint16_t) i / w; // Floor Operation of division
+    uint16_t col = i - (row * w); // Techincally just the modulo operator?
 
     Coordinate new_coor = {
         .y = row,
@@ -52,14 +56,14 @@ Coordinate coordinate_from_flat_map(size_t i, size_t w, size_t h) {
     return new_coor;
 }
 
-size_t flat_poistion_from_coordinate(Coordinate coor, size_t w, size_t h) {
-    size_t flat_position = (coor.y * w) + coor.x;
+uint32_t flat_poistion_from_coordinate(Coordinate coor, uint16_t w, uint16_t h) {
+    uint32_t flat_position = (coor.y * w) + coor.x;
     return flat_position;
 }
 
-uint16_t get_random_int(uint16_t min_val, uint16_t max_val, uint16_t seed_shift) {
-    srand(time(NULL) + (seed_shift * seed_shift)); //set seed to NOW;
+uint32_t get_random_int(uint32_t min_val, uint32_t max_val) {
+    if (max_val <= min_val) return min_val;   // guards against underflow / div by zero
 
-    int16_t rand_int = (rand() % (max_val - min_val + 1)) + min_val;
-    return rand_int;
+    uint32_t range = (uint32_t) max_val - min_val + 1;
+    return (uint32_t)(min_val + rand() % range);
 }

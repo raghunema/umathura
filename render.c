@@ -130,11 +130,11 @@ int end_ncurses(void) {
 }
 
 Camera initalize_win_camera(Coordinate start_coors) {
-	char *camera_view = malloc((size_t)play_win_h * play_win_w * sizeof(char));
+	char *camera_view = malloc((uint32_t)play_win_h * play_win_w * sizeof(char));
 
 	Coordinate win_midpoint = {
-		.y = (size_t) play_win_h / 2,
-		.x = (size_t) play_win_w / 2
+		.y = (uint16_t) play_win_h / 2,
+		.x = (uint16_t) play_win_w / 2
 	};
 
 	Camera c = {
@@ -150,8 +150,8 @@ Camera initalize_win_camera(Coordinate start_coors) {
 }
 
 void update_camera_position(Player *p, Camera *c) {
-	size_t distance_y = (p->coors.y > c->map_position.y) ? p->coors.y - c->map_position.y : c->map_position.y - p->coors.y;
-	size_t distance_x = (p->coors.x > c->map_position.x) ? p->coors.x - c->map_position.x : c->map_position.x - p->coors.x;
+	uint16_t distance_y = (p->coors.y > c->map_position.y) ? p->coors.y - c->map_position.y : c->map_position.y - p->coors.y;
+	uint16_t distance_x = (p->coors.x > c->map_position.x) ? p->coors.x - c->map_position.x : c->map_position.x - p->coors.x;
 
 	if (distance_y > c->max_distance_from_player) {
 		if (p->coors.y > c->map_position.y) {
@@ -175,7 +175,7 @@ void update_camera_position(Player *p, Camera *c) {
 void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 
 	//resetting camera_view
-	memset(c->camera_view, ' ', (size_t)c->win_h * c->win_w);
+	memset(c->camera_view, ' ', (uint32_t)c->win_h * c->win_w);
 
 	/* 
 		Camera is at position (3,3)
@@ -213,7 +213,7 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 	print_debug("\nMin_X: %d, Max_x: %d, Min_Y: %d, Max_Y: %d\n", min_x, max_x, min_y, max_y);
 
 	//need to update this so it only goes through tiles the camera can see instead of the entire floor
-	for (size_t i = 0; i < (f->floor_height * f->floor_width); i++) {
+	for (uint32_t i = 0; i < (f->floor_height * f->floor_width); i++) {
 		/*
 			For Each tiles in flat map of the floor
 				Check if it is in Camera View
@@ -227,17 +227,17 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 		//print_debug("global_coor (y,x): (%zu, %zu)\n", global_coor.y, global_coor.x);
 
 		if (
-			((int16_t) global_coor.x >= min_x) &&
-			((int16_t) global_coor.x <= max_x) &&
-			((int16_t) global_coor.y >= min_y) &&
-			((int16_t) global_coor.y <= max_y)
+			((uint16_t) global_coor.x >= min_x) &&
+			((uint16_t) global_coor.x <= max_x) &&
+			((uint16_t) global_coor.y >= min_y) &&
+			((uint16_t) global_coor.y <= max_y)
 		) { 
 			Coordinate shifted_coor = {
 				.y = global_coor.y - shift_coors_by.y,
 				.x = global_coor.x - shift_coors_by.x
 			};
 
-			size_t new_flat_position = flat_poistion_from_coordinate(shifted_coor, c->win_w, c->win_h);
+			uint32_t new_flat_position = flat_poistion_from_coordinate(shifted_coor, c->win_w, c->win_h);
 			c->camera_view[new_flat_position] = f->tiles[i].sprite;
 
 			//print_debug("(y,x) Global_coor:(%zu, %zu); Shifted_coors:(%zu, %zu); New_flat_positin:%zu\n", global_coor.y, global_coor.x, shifted_coor.y, shifted_coor.x, new_flat_position);
@@ -249,7 +249,7 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 		.y = p->coors.y - shift_coors_by.y,
 		.x = p->coors.x - shift_coors_by.x
 	};
-	size_t player_flat_position = flat_poistion_from_coordinate(player_shifted_coor, c->win_w, c->win_h);
+	uint32_t player_flat_position = flat_poistion_from_coordinate(player_shifted_coor, c->win_w, c->win_h);
 	c->camera_view[player_flat_position] = p->sprite;
 
 	// print_debug("Camera View String:\n");
@@ -265,10 +265,10 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 
 
 void render_camera_view(Camera *c) {
-	size_t h_cam = c->win_h;
-	size_t w_cam = c->win_w;
+	uint16_t h_cam = c->win_h;
+	uint16_t w_cam = c->win_w;
 
-	for (size_t i = 0; i < h_cam * w_cam; i++) {
+	for (uint32_t i = 0; i < h_cam * w_cam; i++) {
 		Coordinate camera_view_coor = coordinate_from_flat_map(i, w_cam, h_cam);
 		mvwaddch(play_win, camera_view_coor.y, camera_view_coor.x, c->camera_view[i]);
 	}
@@ -277,16 +277,16 @@ void render_camera_view(Camera *c) {
 
 void render_map(const Dungeon *d) {
     D_Floor curr_floor = d->floors[d->curr_floor];
-    size_t h = curr_floor.floor_height;
-    size_t w = curr_floor.floor_width;
+    uint16_t h = curr_floor.floor_height;
+    uint16_t w = curr_floor.floor_width;
    
     /*
         D_Floor.tiles is a flat map
         [Width, Width, Width] etc
     */
-    for (size_t i = 0; i < (size_t) w * h; i++) {
-        size_t row = (size_t) i / w; //Floor operation with division to get row
-        size_t col = i - (row * w);
+    for (uint32_t i = 0; i < (uint32_t) w * h; i++) {
+        uint16_t row = (uint16_t) i / w; //Floor operation with division to get row
+        uint16_t col = i - (row * w);
 
         D_Tile curr_tile = curr_floor.tiles[i];
         mvwaddch(play_win, row, col, curr_tile.sprite);
