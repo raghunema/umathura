@@ -66,6 +66,45 @@ typedef struct {
     uint16_t h;
 } D_Room;
 
+D_Room generate_random_room(uint16_t w, uint16_t h) {
+    D_Room new_room = {
+        .w = get_random_int(3, (uint16_t) w / 4), // picking 4 randomly
+        .h = get_random_int(3, (uint16_t) h / 6), // picking 6 randomly
+    };
+
+    //Top left corner of the box - needs to shift to account for boundaries
+    new_room.min.x = get_random_int(0, w - (new_room.w + 1));
+    new_room.max.x = (new_room.min.x + new_room.w); //Do I need to do a -1??
+    new_room.min.y = get_random_int(0, h - (new_room.h + 1));
+    new_room.max.y = (new_room.min.y + new_room.h); 
+    new_room.mid.x = (uint16_t) (new_room.min.x + (new_room.w / 2)); //Do I need to do a -1 here as well?
+    new_room.mid.y = (uint16_t) (new_room.min.y + (new_room.h / 2));
+
+    return new_room;
+}
+
+void create_room_tiles(D_Floor *f, D_Room *room) {
+
+    for (uint16_t j = room->min.y; j < room->max.y; j++) {
+        for (uint16_t k = room->min.x; k < room->max.x; k++) { //I think this '<' operator takes care of the -1 offset of room wide
+            uint16_t r_index = (j * f->floor_width) + k;
+
+            //wall placement checks
+            if (
+                j == room->min.y || 
+                j == (room->max.y - 1) ||
+                k == room->min.x || 
+                k == (room->max.x - 1)
+            ) {
+                f->tiles[r_index] = make_tile_from_terrain_type(T_WALL);
+            } else {
+                f->tiles[r_index] = make_tile_from_terrain_type(T_FLOOR);
+            }
+        }
+    }
+
+}
+
 D_Floor generate_floor(uint16_t h, uint16_t w, uint16_t room_tries) {
     D_Floor f = {
         .floor_height = h,
@@ -82,7 +121,6 @@ D_Floor generate_floor(uint16_t h, uint16_t w, uint16_t room_tries) {
         If ok, create tiles and save to floor
     */
 
-
     for (uint32_t i = 0; i < (h * w); i++) {
         f.tiles[i] = make_tile_from_terrain_type(T_OUTSIDE);
     }
@@ -92,18 +130,7 @@ D_Floor generate_floor(uint16_t h, uint16_t w, uint16_t room_tries) {
     uint16_t room_num = 0;
 
     for (uint16_t i = 0; i < room_tries; i++) {
-        D_Room new_room = {
-            .w = get_random_int(3, (uint16_t) w / 4), // picking 4 randomly
-            .h = get_random_int(3, (uint16_t) h / 6), // picking 6 randomly
-        };
-
-        //Top left corner of the box - needs to shift to account for boundaries
-        new_room.min.x = get_random_int(0, w - (new_room.w + 1));
-        new_room.max.x = (new_room.min.x + new_room.w); //Do I need to do a -1??
-        new_room.min.y = get_random_int(0, h - (new_room.h + 1));
-        new_room.max.y = (new_room.min.y + new_room.h); 
-        new_room.mid.x = (uint16_t) (new_room.min.x + (new_room.w / 2)); //Do I need to do a -1 here as well?
-        new_room.mid.y = (uint16_t) (new_room.min.y + (new_room.h / 2));
+        D_Room new_room = generate_random_room(f.floor_width, f.floor_height); 
         
         print_debug("\nChecking Room: (y1,x1): (%hu, %hu); (h,w): (%hu, %hu); (y2,x2): %hu, %hu", new_room.min.y, new_room.min.x, new_room.h, new_room.w, new_room.max.y, new_room.max.x);
 
@@ -133,44 +160,28 @@ D_Floor generate_floor(uint16_t h, uint16_t w, uint16_t room_tries) {
             room_num++;
 
             //Add to floor (Can separate this out in a diff function later...)
-            for (uint16_t j = new_room.min.y; j < new_room.max.y; j++) {
-                for (uint16_t k = new_room.min.x; k < new_room.max.x; k++) { //I think this '<' operator takes care of the -1 offset of room wide
-                    uint16_t r_index = (j * w) + k;
-
-                    //wall placement checks
-                    if (
-                        j == new_room.min.y || 
-                        j == (new_room.max.y - 1) ||
-                        k == new_room.min.x || 
-                        k == (new_room.max.x - 1)
-                    ) {
-                        f.tiles[r_index] = make_tile_from_terrain_type(T_WALL);
-                    } else {
-                        f.tiles[r_index] = make_tile_from_terrain_type(T_FLOOR);
-                    }
-                }
-            }
+            create_room_tiles(&f, &new_room);
         }
 
         /*
             Connect this new_room with the last previously generated room
         */
-        // if (room_num > 1) {
-        //     D_Room prev_rooom = rooms[room_num - 1];
+        if (room_num > 1) {
+            D_Room prev_rooom = rooms[room_num - 1];
 
-        //     /*
-        //         How to find the closest coordinates of these two rooms? 
-        //         Which two points am I connecting??
-        //             Maybe I can use that bresenham distance or something
-        //             No - I would loop over all the Wall Tiles of each room (n^2) and calculate the L-1 Distance 
-        //             Find the closest pair of coordinates and make a tunnel between them
-        //             There's gotta be a faster way lmao
-        //         Lets just start with the center
-        //     */
+            /*
+                How to find the closest coordinates of these two rooms? 
+                Which two points am I connecting??
+                    Maybe I can use that bresenham distance or something
+                    No - I would loop over all the Wall Tiles of each room (n^2) and calculate the L-1 Distance 
+                    Find the closest pair of coordinates and make a tunnel between them
+                    There's gotta be a faster way lmao
+                Lets just start with the center
+            */
             
             
 
-        // }
+        }
 
     }
 
