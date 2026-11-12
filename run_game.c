@@ -45,7 +45,7 @@ int main(void)
 
     //d.floors[0] = floor_from_text(test_map, 40, 42);
     Coordinate start_coors;
-    d.floors[d.curr_floor] = generate_floor(&start_coors, 200, 200, 100);
+    d.floors[d.curr_floor] = generate_floor(&start_coors, 200, 200, 250);
     render_map(&d);    
 
     Player p = intialize_player(start_coors);

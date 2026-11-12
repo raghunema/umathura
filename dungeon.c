@@ -76,8 +76,8 @@ typedef struct {
 
 D_Room generate_random_room(uint16_t w, uint16_t h) {
     D_Room new_room = {
-        .w = get_random_int(3, (uint16_t) w / 4), // picking 4 randomly
-        .h = get_random_int(3, (uint16_t) h / 6), // picking 6 randomly
+        .w = get_random_int(4, (uint16_t) w / 4), // picking to divide by 4 randomly
+        .h = get_random_int(4, (uint16_t) h / 6), // picking to divide by 6 randomly
     };
 
     //Top left corner of the box - needs to shift to account for boundaries
@@ -114,45 +114,46 @@ void create_room_tiles(D_Floor *f, D_Room *room) {
 
 }
 
-uint16_t tunnel_horizontal(D_Floor *f, uint16_t y, uint16_t x1, uint16_t x2) {
+void tunnel_horizontal(D_Floor *f, D_Room r1, D_Room r2) {
 
-    uint16_t row = y * f->floor_width;
+    if (r1.mid.x < r2.mid.x) {
 
-    if (x1 < x2) {
-        for (int i = x1; i < x2; i++) {
+        uint16_t row = r1.mid.y * f->floor_width;
+
+        for (uint16_t i = r1.mid.x; i < r2.mid.x; i++) {
             f->tiles[row + i] = make_tile_from_terrain_type(T_FLOOR);
         }
 
-        print_debug("Horizontal Tunnel from (%hu, %hu) at %hu(y)\n", x1, x2, y);
-        return x2;
+        print_debug("Horizontal Tunnel from (%hu, %hu) at %hu(y)\n", r1.mid.x, r2.mid.x, r1.mid.y);
     } else {
-        for (int i = x2; i < x1; i++) {
+        uint16_t row = r2.mid.y * f->floor_width;
+
+        for (uint16_t i = r2.mid.x; i < r1.mid.x; i++) {
             f->tiles[row + i] = make_tile_from_terrain_type(T_FLOOR);
         }
 
-        print_debug("Horizontal Tunnel from (%hu, %hu) at %hu(y)\n", x2, x1, y);
-        return x1;
+        print_debug("Horizontal Tunnel from (%hu, %hu) at %hu(y)\n", r2.mid.x, r1.mid.x, r2.mid.y);
     }
 }
 
-uint16_t tunnel_vertical(D_Floor *f, uint16_t x, uint16_t y1, uint16_t y2) {
+void tunnel_vertical(D_Floor *f, D_Room r1, D_Room r2) {
+    uint16_t start_x = (r1.mid.x < r2.mid.x) ? r2.mid.x : r1.mid.x;
 
-    if (y1 < y2) {
-        for (int i = y1; i < y2; i++) {
+    if (r1.mid.y < r2.mid.y) {
+        for (uint16_t i = r1.mid.y; i <= r2.mid.y; i++) {
             uint16_t row = i * f->floor_width;
-            f->tiles[row + x] = make_tile_from_terrain_type(T_FLOOR);
+            f->tiles[row + start_x] = make_tile_from_terrain_type(T_FLOOR);
         }
 
-        print_debug("Vertical Tunnel from (%hu, %hu) at %hu(x)\n", y1, y2, x);
-        return y2;
+        print_debug("Vertical Tunnel from (%hu, %hu) at %hu(x)\n", r1.mid.y, r2.mid.y, start_x);
     } else {
-        for (int i = y2; i < y1; i++) {
+        for (uint16_t i = r2.mid.y; i <= r1.mid.y; i++) {
             uint16_t row = i * f->floor_width;
-            f->tiles[row + x] = make_tile_from_terrain_type(T_FLOOR);
+            f->tiles[row + start_x] = make_tile_from_terrain_type(T_FLOOR);
         }
 
-        print_debug("Vertical Tunnel from (%hu, %hu) at %hu(x)\n", y2, y1, x);
-        return y1;
+        print_debug("Vertical Tunnel from (%hu, %hu) at %hu(x)\n", r2.mid.y, r1.mid.y, start_x);
+
     }
 }
 
@@ -210,7 +211,8 @@ void place_walls(D_Floor *f) {
             }
         };
         
-        if (num_floor_neighbors > 0 && num_floor_neighbors < 4) {
+        //&& num_floor_neighbors < 4
+        if (num_floor_neighbors > 0 ) {
             f->tiles[i] = make_tile_from_terrain_type(T_WALL);
         }
     }
@@ -273,7 +275,7 @@ D_Floor generate_floor(Coordinate *start_coors, uint16_t h, uint16_t w, uint16_t
                 Connect this new_room with the last previously generated room
             */
             if (room_num > 0) {
-                D_Room prev_rooom = rooms[room_num - 1];
+                D_Room prev_room = rooms[room_num - 1];
 
                 /*
                     How to find the closest coordinates of these two rooms? 
@@ -285,9 +287,20 @@ D_Floor generate_floor(Coordinate *start_coors, uint16_t h, uint16_t w, uint16_t
                     Lets just start with the center
                 */
                 
-                print_debug("Room 1:(%hu, %hu); Room 2: (%hu, %hu)\n", prev_rooom.mid.y, prev_rooom.mid.x, new_room.mid.y, new_room.mid.x);            
-                uint16_t x_pos = tunnel_horizontal(&f, prev_rooom.mid.y, prev_rooom.mid.x, new_room.mid.x);
-                uint16_t y_pos = tunnel_vertical(&f, x_pos, prev_rooom.mid.y, new_room.mid.y);
+                /*
+                    Need to take into account the y position we are starting in 
+                */
+                print_debug("Room 1:(%hu, %hu); Room 2: (%hu, %hu)\n", prev_room.mid.y, prev_room.mid.x, new_room.mid.y, new_room.mid.x);            
+                tunnel_horizontal(&f, prev_room, new_room);
+                tunnel_vertical(&f, prev_room, new_room);
+
+                //uint16_t y_pos = tunnel_vertical(&f, new_room.mid.x, prev_room.mid.y, new_room.mid.y);
+                // if (x_pos == prev_room.mid.x) {
+                //     uint16_t y_pos = tunnel_vertical(&f, prev_room.mid.x, prev_room.mid.y, new_room.mid.y);
+                // } else if (x_pos == new_room.mid.x) {
+                //     uint16_t y_pos = tunnel_vertical(&f, new_room.mid.x, prev_room.mid.y, new_room.mid.y);
+                // }
+               
                 print_debug("\n");
             } else {
                 start_coors->x = new_room.mid.x;
