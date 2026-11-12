@@ -42,14 +42,11 @@ int main(void)
     Dungeon d;
     d.num_floors = 1;
     d.curr_floor = 0;
-    //d.floors[0] = floor_from_text(test_map, 40, 42);
-    d.floors[d.curr_floor] = generate_floor(200, 200, 100);
-    render_map(&d);
 
-    Coordinate start_coors = {
-        .y = 3,
-        .x = 3
-    };
+    //d.floors[0] = floor_from_text(test_map, 40, 42);
+    Coordinate start_coors;
+    d.floors[d.curr_floor] = generate_floor(&start_coors, 200, 200, 1);
+    render_map(&d);    
 
     Player p = intialize_player(start_coors);
     Camera c = initalize_win_camera(start_coors);
@@ -77,7 +74,7 @@ int main(void)
         print_debug("global_prev_coors (x, y): (%hu, %hu)", prev_coors.x,  prev_coors.y);
 
         Coordinate new_coors = get_new_coors_from_input(prev_coors, ch);
-        D_Tile new_tile = get_tile(d.floors[d.curr_floor], new_coors);
+        D_Tile new_tile = get_tile(&d.floors[d.curr_floor], new_coors);
 
         if (!new_tile.is_blocker) {
             update_character_position(&p, new_coors);

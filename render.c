@@ -108,7 +108,7 @@ int create_screens() {
 	mvwprintw(menu_win, 2, 1, " q to Quit");
 	wrefresh(menu_win);
 
-	print_debug("Play_Win (H, W): (%d, %d)", play_win_h, play_win_w);
+	print_debug("Play_Win (H, W): (%d, %d)\n\n", play_win_h, play_win_w);
 
     return 0;
 }
