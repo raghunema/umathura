@@ -169,6 +169,11 @@ void place_walls(D_Floor *f) {
 
     for (uint32_t i = 0; i < h * w; i++) {
         Coordinate curr_coor = coordinate_from_flat_map(i, w, h);
+        D_Tile curr_tile = get_tile(f, curr_coor);
+
+        if (curr_tile.terrain_type == T_FLOOR) {
+            continue;
+        }
 
         D_Tile neighbors[4];
         size_t num_floor_neighbors = 0;
