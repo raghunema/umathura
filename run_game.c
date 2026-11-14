@@ -51,8 +51,7 @@ int main(void)
     Player p = intialize_player(start_coors);
     Camera c = initalize_win_camera(start_coors);
    
-    // initialize_character_placement(&p); 
-
+    set_visible_tiles(&d.floors[d.curr_floor], p.coors, 3);
     set_camera_view(&c, &d.floors[d.curr_floor], &p);
     render_camera_view(&c);
 
@@ -78,6 +77,7 @@ int main(void)
 
         if (!new_tile.is_blocker) {
             update_character_position(&p, new_coors);
+            set_visible_tiles(&d.floors[d.curr_floor], p.coors, 3);
             print_debug("global_new_coors (x, y): (%hu, %hu)", p.coors.x, p.coors.y);
 
             //update camera coordinates to follow player

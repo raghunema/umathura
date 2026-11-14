@@ -56,3 +56,5 @@ D_Floor floor_from_text(const char *char_map, uint32_t h, uint32_t w);
 D_Tile get_tile(D_Floor *floor, Coordinate coors);
 
 D_Floor generate_floor(Coordinate *start_coors, uint16_t h, uint16_t, uint16_t room_tries);
+
+void set_visible_tiles(D_Floor *f, Coordinate p_coor, int radius);

@@ -14,22 +14,22 @@ D_Tile make_tile_from_terrain_type(Terrain_Type terrain_type) {
         tile.terrain_type = T_OUTSIDE;
         tile.is_blocker = true;
         tile.sprite = ' ';
-        tile.is_visible = true;
+        tile.is_visible = false;
     } else if (terrain_type == T_WALL) {
         tile.terrain_type = T_WALL;
         tile.is_blocker = true;
         tile.sprite = '#';
-        tile.is_visible = true;
+        tile.is_visible = false;
     } else if (terrain_type == T_FLOOR) {
         tile.terrain_type = T_FLOOR;
         tile.is_blocker = false;
         tile.sprite = '.';
-        tile.is_visible = true;
+        tile.is_visible = false;
     } else if (terrain_type == T_UNSET) {
         tile.terrain_type = T_OUTSIDE;
         tile.is_blocker = true;
         tile.sprite = ' ';
-        tile.is_visible = true;
+        tile.is_visible = false;
     }
 
     return tile;
@@ -325,6 +325,22 @@ D_Floor generate_floor(Coordinate *start_coors, uint16_t h, uint16_t w, uint16_t
 	}
 
     return f;
+}
+
+void set_visible_tiles(D_Floor *f, Coordinate p_coor, int radius) {
+
+    for (uint16_t i = p_coor.y - radius; i < p_coor.y + radius; i++) {
+        for (uint16_t j = p_coor.x - radius; j < p_coor.x + radius; j++) {
+            Coordinate curr_coord = {
+                .y = i,
+                .x = j
+            };
+
+            uint32_t flat_index = flat_poistion_from_coordinate(curr_coord, f->floor_width, f->floor_height);
+            f->tiles[flat_index].is_visible = true;
+        }   
+    }
+
 }
 
 

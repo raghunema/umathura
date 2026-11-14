@@ -238,8 +238,10 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 			};
 
 			uint32_t new_flat_position = flat_poistion_from_coordinate(shifted_coor, c->win_w, c->win_h);
-			c->camera_view[new_flat_position] = f->tiles[i].sprite;
-
+			if (f->tiles[i].is_visible) {
+				c->camera_view[new_flat_position] = f->tiles[i].sprite;
+			}
+			
 			//print_debug("(y,x) Global_coor:(%zu, %zu); Shifted_coors:(%zu, %zu); New_flat_positin:%zu\n", global_coor.y, global_coor.x, shifted_coor.y, shifted_coor.x, new_flat_position);
 		}		
 	}
