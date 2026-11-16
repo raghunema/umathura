@@ -45,21 +45,19 @@ int main(void)
 
     //d.floors[0] = floor_from_text(test_map, 40, 42);
     Coordinate start_coors;
-    d.floors[d.curr_floor] = generate_floor(&start_coors, 200, 200, 250);
-    render_map(&d);    
+    d.floors[d.curr_floor] = generate_floor(&start_coors, 200, 200, 110);  
 
     Player p = intialize_player(start_coors);
     Camera c = initalize_win_camera(start_coors);
    
-    set_visible_tiles(&d.floors[d.curr_floor], p.coors, 3);
+    //set_visible_tiles(&d.floors[d.curr_floor], p.coors, 3);
     set_camera_view(&c, &d.floors[d.curr_floor], &p);
-    render_camera_view(&c);
 
 	while(run_dungeon_loop) {
         reset_debug_row();
         
         int ch = get_play_input();
-        print_debug("Input String: %d", ch);
+        //print_debug("Input String: %d", ch);
 
         if (ch == 'q') {
             run_dungeon_loop = false;
@@ -70,14 +68,14 @@ int main(void)
             .x = p.coors.x,
             .y = p.coors.y
         };
-        print_debug("global_prev_coors (x, y): (%hu, %hu)", prev_coors.x,  prev_coors.y);
+        print_debug("global_prev_coors (x, y): (%hu, %hu) ", prev_coors.x,  prev_coors.y);
 
         Coordinate new_coors = get_new_coors_from_input(prev_coors, ch);
         D_Tile new_tile = get_tile(&d.floors[d.curr_floor], new_coors);
 
         if (!new_tile.is_blocker) {
             update_character_position(&p, new_coors);
-            set_visible_tiles(&d.floors[d.curr_floor], p.coors, 3);
+            //set_visible_tiles(&d.floors[d.curr_floor], p.coors, 3);
             print_debug("global_new_coors (x, y): (%hu, %hu)", p.coors.x, p.coors.y);
 
             //update camera coordinates to follow player
@@ -85,7 +83,6 @@ int main(void)
         }
 
         set_camera_view(&c, &d.floors[d.curr_floor], &p);
-        render_camera_view(&c);
 
 	};
 
