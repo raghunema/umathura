@@ -175,7 +175,7 @@ void update_camera_position(Player *p, Camera *c) {
 void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 
 	//resetting camera_view
-	memset(c->camera_view, ' ', (uint32_t)c->win_h * c->win_w);
+	werase(play_win);
 
 	/* 
 		Camera is at position (3,3)
@@ -190,6 +190,13 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 		.x = c->map_position.x - c->win_midpoint.x
 	};
 
+	/*
+		1. Loop through only the coordinates the camera can see
+		2. Get tiles
+		3. Shift tiles 
+		4. Render immediately?
+	*/
+
 	/* 
 		For the camera at (a, b), get view bounds
 		min_x = (a - 1/2 camera_w) || 0
@@ -198,100 +205,48 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 		max_y = (b + 1/2 camera_h) || floor_h
 	*/
 
-	int16_t min_x = c->map_position.x - (c->win_w / 2);
+	int32_t min_x = c->map_position.x - (c->win_w / 2);
 	min_x = (min_x > 0) ? min_x : 0;
 
-	int16_t max_x = c->map_position.x +((c->win_w / 2) - 1);
-	max_x = (max_x < (int16_t) f->floor_width) ? max_x : f->floor_width;
+	int32_t max_x = c->map_position.x +((c->win_w / 2) - 1);
+	max_x = (max_x < (int32_t) f->floor_width) ? max_x : f->floor_width;
 
-	int16_t min_y = c->map_position.y - (c->win_h / 2);
+	int32_t min_y = c->map_position.y - (c->win_h / 2);
 	min_y = (min_y > 0) ? min_y : 0;
 
-	int16_t max_y = c->map_position.y + ((c->win_h / 2) - 1);
-	max_y = (max_y < (int16_t) f->floor_height) ? max_y : f->floor_height;
+	int32_t max_y = c->map_position.y + ((c->win_h / 2) - 1);
+	max_y = (max_y < (int32_t) f->floor_height) ? max_y : f->floor_height;
 
 	print_debug("\nMin_X: %d, Max_x: %d, Min_Y: %d, Max_Y: %d\n", min_x, max_x, min_y, max_y);
 
-	//need to update this so it only goes through tiles the camera can see instead of the entire floor
-	for (uint32_t i = 0; i < (f->floor_height * f->floor_width); i++) {
-		/*
-			For Each tiles in flat map of the floor
-				Check if it is in Camera View
-				Convert Tile into Floor-Coorindate
-				Shift Cooridnate for Map
-				Turn back into flat position
-				Add into camera view
-		*/	
-		
-		Coordinate global_coor = coordinate_from_flat_map(i, f->floor_width, f->floor_height);
-		//print_debug("global_coor (y,x): (%zu, %zu)\n", global_coor.y, global_coor.x);
+	for (int32_t i = min_y; i < max_y; i++) {
+		for (int32_t j = min_x; j < max_x; j++) {
 
-		if (
-			((uint16_t) global_coor.x >= min_x) &&
-			((uint16_t) global_coor.x <= max_x) &&
-			((uint16_t) global_coor.y >= min_y) &&
-			((uint16_t) global_coor.y <= max_y)
-		) { 
-			Coordinate shifted_coor = {
-				.y = global_coor.y - shift_coors_by.y,
-				.x = global_coor.x - shift_coors_by.x
+			Coordinate org_tile_coor = {
+				.y = i,
+				.x = j
 			};
 
-			uint32_t new_flat_position = flat_poistion_from_coordinate(shifted_coor, c->win_w, c->win_h);
-			if (f->tiles[i].is_visible) {
-				c->camera_view[new_flat_position] = f->tiles[i].sprite;
-			}
-			
-			//print_debug("(y,x) Global_coor:(%zu, %zu); Shifted_coors:(%zu, %zu); New_flat_positin:%zu\n", global_coor.y, global_coor.x, shifted_coor.y, shifted_coor.x, new_flat_position);
-		}		
+			uint32_t f_index = flat_poistion_from_coordinate(org_tile_coor, f->floor_width, f->floor_height);
+			char sprite = f->tiles[f_index].sprite;
+
+			Coordinate new_tile_coor = {
+				.y = org_tile_coor.y - shift_coors_by.y,
+				.x = org_tile_coor.x - shift_coors_by.x
+			};
+
+			mvwaddch(play_win, new_tile_coor.y, new_tile_coor.x, sprite);
+
+		}
 	}
 
-	//get player_position, shift, and add onto camera_view as well
 	Coordinate player_shifted_coor = {
 		.y = p->coors.y - shift_coors_by.y,
 		.x = p->coors.x - shift_coors_by.x
 	};
-	uint32_t player_flat_position = flat_poistion_from_coordinate(player_shifted_coor, c->win_w, c->win_h);
-	c->camera_view[player_flat_position] = p->sprite;
 
-	// print_debug("Camera View String:\n");
-	// print_debug("%s", c->camera_view);
+	mvwaddch(play_win, player_shifted_coor.y, player_shifted_coor.x, p->sprite);
 
-	// print_debug("\nCamera View:\n");
-	// for (size_t y = 0; y < c->win_h; y++) {
-	// 	print_debug("%.*s\n", (int)c->win_w, &c->camera_view[(size_t)y * c->win_w]);
-	// }
-	// print_debug("+%.*s+\n", (int)c->win_w, "----------------------------------------------------------------");
-
-}
-
-
-void render_camera_view(Camera *c) {
-	uint16_t h_cam = c->win_h;
-	uint16_t w_cam = c->win_w;
-
-	for (uint32_t i = 0; i < h_cam * w_cam; i++) {
-		Coordinate camera_view_coor = coordinate_from_flat_map(i, w_cam, h_cam);
-		mvwaddch(play_win, camera_view_coor.y, camera_view_coor.x, c->camera_view[i]);
-	}
 	wrefresh(play_win);
-}
-
-void render_map(const Dungeon *d) {
-    D_Floor curr_floor = d->floors[d->curr_floor];
-    uint16_t h = curr_floor.floor_height;
-    uint16_t w = curr_floor.floor_width;
-   
-    /*
-        D_Floor.tiles is a flat map
-        [Width, Width, Width] etc
-    */
-    for (uint32_t i = 0; i < (uint32_t) w * h; i++) {
-        uint16_t row = (uint16_t) i / w; //Floor operation with division to get row
-        uint16_t col = i - (row * w);
-
-        D_Tile curr_tile = curr_floor.tiles[i];
-        mvwaddch(play_win, row, col, curr_tile.sprite);
-    }
 
 }

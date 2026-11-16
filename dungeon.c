@@ -14,22 +14,22 @@ D_Tile make_tile_from_terrain_type(Terrain_Type terrain_type) {
         tile.terrain_type = T_OUTSIDE;
         tile.is_blocker = true;
         tile.sprite = ' ';
-        tile.is_visible = false;
+        tile.is_visible = true;
     } else if (terrain_type == T_WALL) {
         tile.terrain_type = T_WALL;
         tile.is_blocker = true;
         tile.sprite = '#';
-        tile.is_visible = false;
+        tile.is_visible = true;
     } else if (terrain_type == T_FLOOR) {
         tile.terrain_type = T_FLOOR;
         tile.is_blocker = false;
         tile.sprite = '.';
-        tile.is_visible = false;
+        tile.is_visible = true;
     } else if (terrain_type == T_UNSET) {
         tile.terrain_type = T_OUTSIDE;
         tile.is_blocker = true;
         tile.sprite = ' ';
-        tile.is_visible = false;
+        tile.is_visible = true;
     }
 
     return tile;
@@ -124,7 +124,7 @@ void tunnel_horizontal(D_Floor *f, D_Room r1, D_Room r2) {
             f->tiles[row + i] = make_tile_from_terrain_type(T_FLOOR);
         }
 
-        print_debug("Horizontal Tunnel from (%hu, %hu) at %hu(y)\n", r1.mid.x, r2.mid.x, r1.mid.y);
+        //print_debug("Horizontal Tunnel from (%hu, %hu) at %hu(y)\n", r1.mid.x, r2.mid.x, r1.mid.y);
     } else {
         uint16_t row = r2.mid.y * f->floor_width;
 
@@ -132,7 +132,7 @@ void tunnel_horizontal(D_Floor *f, D_Room r1, D_Room r2) {
             f->tiles[row + i] = make_tile_from_terrain_type(T_FLOOR);
         }
 
-        print_debug("Horizontal Tunnel from (%hu, %hu) at %hu(y)\n", r2.mid.x, r1.mid.x, r2.mid.y);
+        //print_debug("Horizontal Tunnel from (%hu, %hu) at %hu(y)\n", r2.mid.x, r1.mid.x, r2.mid.y);
     }
 }
 
@@ -145,14 +145,14 @@ void tunnel_vertical(D_Floor *f, D_Room r1, D_Room r2) {
             f->tiles[row + start_x] = make_tile_from_terrain_type(T_FLOOR);
         }
 
-        print_debug("Vertical Tunnel from (%hu, %hu) at %hu(x)\n", r1.mid.y, r2.mid.y, start_x);
+        //print_debug("Vertical Tunnel from (%hu, %hu) at %hu(x)\n", r1.mid.y, r2.mid.y, start_x);
     } else {
         for (uint16_t i = r2.mid.y; i <= r1.mid.y; i++) {
             uint16_t row = i * f->floor_width;
             f->tiles[row + start_x] = make_tile_from_terrain_type(T_FLOOR);
         }
 
-        print_debug("Vertical Tunnel from (%hu, %hu) at %hu(x)\n", r2.mid.y, r1.mid.y, start_x);
+        //print_debug("Vertical Tunnel from (%hu, %hu) at %hu(x)\n", r2.mid.y, r1.mid.y, start_x);
 
     }
 }
@@ -290,7 +290,7 @@ D_Floor generate_floor(Coordinate *start_coors, uint16_t h, uint16_t w, uint16_t
                 /*
                     Need to take into account the y position we are starting in 
                 */
-                print_debug("Room 1:(%hu, %hu); Room 2: (%hu, %hu)\n", prev_room.mid.y, prev_room.mid.x, new_room.mid.y, new_room.mid.x);            
+                //print_debug("Room 1:(%hu, %hu); Room 2: (%hu, %hu)\n", prev_room.mid.y, prev_room.mid.x, new_room.mid.y, new_room.mid.x);            
                 tunnel_horizontal(&f, prev_room, new_room);
                 tunnel_vertical(&f, prev_room, new_room);
 
@@ -316,13 +316,13 @@ D_Floor generate_floor(Coordinate *start_coors, uint16_t h, uint16_t w, uint16_t
 
     place_walls(&f);
 
-    print_debug("\nGenerated Floor:\n");
-	for (uint16_t y = 0; y < h; y++) {
-        for (uint16_t x = 0; x < w; x++) {
-            print_debug("%c", f.tiles[(y*w) + x].sprite);
-        }
-		print_debug("\n");
-	}
+    // print_debug("\nGenerated Floor:\n");
+	// for (uint16_t y = 0; y < h; y++) {
+    //     for (uint16_t x = 0; x < w; x++) {
+    //         print_debug("%c", f.tiles[(y*w) + x].sprite);
+    //     }
+	// 	print_debug("\n");
+	// }
 
     return f;
 }
