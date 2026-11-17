@@ -35,7 +35,6 @@ Coordinate get_new_coors_from_input(Coordinate prev_coors, int ch) {
     return new_coors;
 }
 
-
 /*
     Given a position from a flat_map, out put a coordinate
 */

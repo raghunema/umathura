@@ -51,11 +51,15 @@ int main(void)
     Camera c = initalize_win_camera(start_coors);
    
     //set_visible_tiles(&d.floors[d.curr_floor], p.coors, 3);
+    show_character_stats(&p);
     set_camera_view(&c, &d.floors[d.curr_floor], &p);
+    refresh_windows();
 
 	while(run_dungeon_loop) {
         reset_debug_row();
         
+        bool updated_camera_pos = false;
+
         int ch = get_play_input();
         //print_debug("Input String: %d", ch);
 
@@ -79,14 +83,23 @@ int main(void)
             print_debug("global_new_coors (x, y): (%hu, %hu)", p.coors.x, p.coors.y);
 
             //update camera coordinates to follow player
-            update_camera_position(&p, &c);
+            updated_camera_pos = update_camera_position(&p, &c);
         }
 
-        set_camera_view(&c, &d.floors[d.curr_floor], &p);
+        show_character_stats(&p);
+
+        // if (updated_camera_pos) {
+            set_camera_view(&c, &d.floors[d.curr_floor], &p);
+        // 
+
+        refresh_windows();
 
 	};
 
     end_ncurses();
+
+    // free(&d);
+    // free(&p);
 
     debug_close();  
 

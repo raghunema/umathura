@@ -30,9 +30,12 @@ int end_ncurses();
 
 int initialize_character_placement(Player *p);
 
+void refresh_windows();
+
 Camera initalize_win_camera(Coordinate start_coors);
-void update_camera_position(Player *p, Camera *c);
+bool update_camera_position(Player *p, Camera *c);
 void set_camera_view(Camera *c, D_Floor *f, Player *p);
+void show_character_stats(Player *p);
 
 void reset_debug_row(void);
 void print_debug(const char *fmt, ...) __attribute__((format(printf, 1, 2)));

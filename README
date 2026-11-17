@@ -1,0 +1,38 @@
+This is a rogue-like
+
+Goals: 
+    Learning C, learning in general
+    Simple gameplay, clean code
+    Extensible
+
+Features: 
+    nCurses for rendering - ascii rendering/graphics
+    dungeon generation
+    camera follows player
+    simple fighting mechanics
+Extra (not just gameplay):
+    Better debug logger (print should have sense so reading it makes more sense)
+    CPU Logger to for resource management
+
+Player
+    Line of sight mechanics
+    *Random stats generation
+    *Leveling
+    *Movement and attack
+
+Monsters
+    Only a couple
+    *Simple A* pathfinding
+
+Future TO_DO:
+    *Refactor into an actual defined finte-state-machine instead of it being implicit right now
+    *Forget vs Remebered tiles
+        *Only update set_camera_view if camera_position changes
+        Right now everything is seen and then remebered (is_visible)
+    *Different generation methods
+        Implemented simple cellular automata
+        *BSD
+        *Carving for more of a 'cave feel'
+        Save + load floors
+            Maybe also save floor's objects
+

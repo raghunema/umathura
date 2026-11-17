@@ -106,7 +106,8 @@ int create_screens() {
 	
 	mvwprintw(menu_win, 1, 1, " Arrows keys for movement");
 	mvwprintw(menu_win, 2, 1, " q to Quit");
-	wrefresh(menu_win);
+	mvwprintw(menu_win, 3, 1, " a to Attack");
+	//wrefresh(menu_win);
 
 	print_debug("Play_Win (H, W): (%d, %d)\n\n", play_win_h, play_win_w);
 
@@ -149,9 +150,11 @@ Camera initalize_win_camera(Coordinate start_coors) {
 	return c;
 }
 
-void update_camera_position(Player *p, Camera *c) {
+bool update_camera_position(Player *p, Camera *c) {
 	uint16_t distance_y = (p->coors.y > c->map_position.y) ? p->coors.y - c->map_position.y : c->map_position.y - p->coors.y;
 	uint16_t distance_x = (p->coors.x > c->map_position.x) ? p->coors.x - c->map_position.x : c->map_position.x - p->coors.x;
+
+	bool updated_pos = false;
 
 	if (distance_y > c->max_distance_from_player) {
 		if (p->coors.y > c->map_position.y) {
@@ -159,6 +162,8 @@ void update_camera_position(Player *p, Camera *c) {
 		} else {
 			c->map_position.y--;
 		}
+
+		updated_pos = true;
 	}
 	
 	if (distance_x > c->max_distance_from_player) {
@@ -167,8 +172,11 @@ void update_camera_position(Player *p, Camera *c) {
 		} else {
 			c->map_position.x--;
 		}
+
+		updated_pos = true;
 	}
 
+	return updated_pos;
 }
 
 //Write a view into camera to then render
@@ -247,6 +255,37 @@ void set_camera_view(Camera *c, D_Floor *f, Player *p) {
 
 	mvwaddch(play_win, player_shifted_coor.y, player_shifted_coor.x, p->sprite);
 
-	wrefresh(play_win);
+	//wrefresh(play_win);
 
+}
+
+void show_character_stats(Player *p) {
+	int row = 1;
+	int col = 2;
+
+	mvwprintw(status_win, row, col, "Level: %d XP: %d", p->level, p->xp);
+	row++;
+
+	mvwprintw(status_win, row, col, "%d/%d", p->hp, p->max_hp);
+	row++;
+
+	mvwprintw(status_win, row, col, "Armor: %d", p->ac);
+	row++;
+
+	mvwprintw(status_win, row, col, "Weapon: %s, HitDie: %dd%d", p->weapon.name, p->weapon.dmg_die.n, p->weapon.dmg_die.d);
+	row++;
+
+	for (int i = 0; i < (int) MAX_ARMOR_ITEMS; i++) {
+		if (p->armor[i].name != NULL && p->armor[i].name != '\0') {
+			mvwprintw(status_win, row, col, "%s, +%d", p->armor[i].name, p->armor[i].ac_mod);
+		}
+	}
+
+	//wrefresh(status_win);
+}
+
+void refresh_windows() {
+	wrefresh(play_win);
+	wrefresh(status_win);
+	wrefresh(menu_win);
 }
